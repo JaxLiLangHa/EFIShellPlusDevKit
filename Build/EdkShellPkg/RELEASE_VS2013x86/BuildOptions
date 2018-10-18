@@ -1,0 +1,3 @@
+gCommandLineDefines: {'ARCH': 'X64'}
+BuildOptionPcd: []
+Active Platform: e:\edkii\shelldevkit\EdkShellPkg\EdkShellPkg.dsc

@@ -1,0 +1,5 @@
+Notes:
+  This EFI Shell release package has been tested on Edk1.06 Release,
+  User can get this version EDK from the following URL:
+  http://sourceforge.net/projects/efidevkit/files/Releases/Official%20Releases/Edk%201.06.zip/download
+  We don't guarantee this package can work correctly on the other EDK snapshot.

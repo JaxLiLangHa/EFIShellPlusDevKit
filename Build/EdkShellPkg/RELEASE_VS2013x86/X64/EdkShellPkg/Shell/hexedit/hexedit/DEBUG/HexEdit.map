@@ -1,0 +1,514 @@
+ HexEdit
+
+ Timestamp is 5bc8862f (Thu Oct 18 21:10:07 2018)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000088ccH .text$mn                CODE
+ 0002:00000000 00001690H .data                   DATA
+ 0002:00001690 00000fe0H .rdata                  DATA
+ 0002:00002680 000004e0H .bss                    DATA
+ 0003:00000000 0000045cH .pdata                  DATA
+ 0004:00000000 00000434H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0001:00000000       InitializeEFIHexEditor     00000000000002a0 f   HexEdit:main.obj
+ 0001:00000668       HexEditGetDefaultFileName  0000000000000908 f   HexEdit:main.obj
+ 0001:00000760       HMainEditorInit            0000000000000a00 f   HexEdit:libEditor.obj
+ 0001:00000a34       HMainEditorCleanup         0000000000000cd4 f   HexEdit:libEditor.obj
+ 0001:00000bb0       HMainEditorRefresh         0000000000000e50 f   HexEdit:libEditor.obj
+ 0001:000010d0       HMainEditorKeyInput        0000000000001370 f   HexEdit:libEditor.obj
+ 0001:00001448       HMainEditorBackup          00000000000016e8 f   HexEdit:libEditor.obj
+ 0001:000015a0       HEditorClearLine           0000000000001840 f   HexEdit:libMisc.obj
+ 0001:00001624       HMoveLine                  00000000000018c4 f   HexEdit:libMisc.obj
+ 0001:00001694       HIsValidFileName           0000000000001934 f   HexEdit:libMisc.obj
+ 0001:0000173c       HStrStr                    00000000000019dc f   HexEdit:libMisc.obj
+ 0001:00001860       HXtoi                      0000000000001b00 f   HexEdit:libMisc.obj
+ 0001:00001924       HBufferImageInit           0000000000001bc4 f   HexEdit:libBufferImage.obj
+ 0001:00001ac8       HBufferImageFreeLines      0000000000001d68 f   HexEdit:libBufferImage.obj
+ 0001:00001b30       HBufferImagePrintLine      0000000000001dd0 f   HexEdit:libBufferImage.obj
+ 0001:00001e78       HBufferImageIsAtHighBits   0000000000002118 f   HexEdit:libBufferImage.obj
+ 0001:00001ec0       HBufferImageIsInSelectedArea 0000000000002160 f   HexEdit:libBufferImage.obj
+ 0001:00001f7c       HBufferImageRestoreMousePosition 000000000000221c f   HexEdit:libBufferImage.obj
+ 0001:00002210       HBufferImageRestorePosition 00000000000024b0 f   HexEdit:libBufferImage.obj
+ 0001:00002244       HBufferImageRefresh        00000000000024e4 f   HexEdit:libBufferImage.obj
+ 0001:00002478       HBufferImageRead           0000000000002718 f   HexEdit:libBufferImage.obj
+ 0001:00002514       HBufferImageSave           00000000000027b4 f   HexEdit:libBufferImage.obj
+ 0001:00002594       HBufferImageCreateLine     0000000000002834 f   HexEdit:libBufferImage.obj
+ 0001:00002604       HBufferImageHandleInput    00000000000028a4 f   HexEdit:libBufferImage.obj
+ 0001:000028f4       HBufferImageAddChar        0000000000002b94 f   HexEdit:libBufferImage.obj
+ 0001:00002a08       HBufferImageMovePosition   0000000000002ca8 f   HexEdit:libBufferImage.obj
+ 0001:00002b28       HBufferImageGetTotalSize   0000000000002dc8 f   HexEdit:libBufferImage.obj
+ 0001:00002b54       HBufferImageDeleteCharacterFromBuffer 0000000000002df4 f   HexEdit:libBufferImage.obj
+ 0001:00002cf0       HBufferImageAddCharacterToBuffer 0000000000002f90 f   HexEdit:libBufferImage.obj
+ 0001:00002e68       HBufferImageDoBackspace    0000000000003108 f   HexEdit:libBufferImage.obj
+ 0001:00002f0c       HBufferImageDoDelete       00000000000031ac f   HexEdit:libBufferImage.obj
+ 0001:00002fb0       HBufferImageBufferToList   0000000000003250 f   HexEdit:libBufferImage.obj
+ 0001:00003050       HBufferImageListToBuffer   00000000000032f0 f   HexEdit:libBufferImage.obj
+ 0001:000030d8       HBufferImageAdjustMousePosition 0000000000003378 f   HexEdit:libBufferImage.obj
+ 0001:0000319c       HMainStatusBarSetStatusString 000000000000343c f   HexEdit:libStatusBar.obj
+ 0001:000031f0       HMainTitleBarRefresh       0000000000003490 f   HexEdit:libTitleBar.obj
+ 0001:00003604       HMainInputBarPrintInput    00000000000038a4 f   HexEdit:libInputBar.obj
+ 0001:00003730       HMainInputBarRefresh       00000000000039d0 f   HexEdit:libInputBar.obj
+ 0001:00003934       HMainInputBarSetPrompt     0000000000003bd4 f   HexEdit:libInputBar.obj
+ 0001:00003988       HMainInputBarSetStringSize 0000000000003c28 f   HexEdit:libInputBar.obj
+ 0001:000039e0       HMainCommandOpenFile       0000000000003c80 f   HexEdit:libMenuBar.obj
+ 0001:00003c88       HMainCommandOpenDisk       0000000000003f28 f   HexEdit:libMenuBar.obj
+ 0001:00003f58       HMainCommandOpenMemory     00000000000041f8 f   HexEdit:libMenuBar.obj
+ 0001:000041e8       HMainCommandSaveBuffer     0000000000004488 f   HexEdit:libMenuBar.obj
+ 0001:0000469c       HMainCommandSelectStart    000000000000493c f   HexEdit:libMenuBar.obj
+ 0001:0000470c       HMainCommandSelectEnd      00000000000049ac f   HexEdit:libMenuBar.obj
+ 0001:00004784       HMainCommandCut            0000000000004a24 f   HexEdit:libMenuBar.obj
+ 0001:00004850       HMainCommandPaste          0000000000004af0 f   HexEdit:libMenuBar.obj
+ 0001:0000490c       HMainCommandGoToOffset     0000000000004bac f   HexEdit:libMenuBar.obj
+ 0001:000049f0       HMainCommandExit           0000000000004c90 f   HexEdit:libMenuBar.obj
+ 0001:00004ae4       HDiskImageSetDiskNameOffsetSize 0000000000004d84 f   HexEdit:libdiskimage.obj
+ 0001:00004bb0       HDiskImageRead             0000000000004e50 f   HexEdit:libdiskimage.obj
+ 0001:00004e24       HDiskImageSave             00000000000050c4 f   HexEdit:libdiskimage.obj
+ 0001:00004f38       HMemImageRead              00000000000051d8 f   HexEdit:libMemImage.obj
+ 0001:0000510c       HMemImageSave              00000000000053ac f   HexEdit:libMemImage.obj
+ 0001:000051d8       HFileImageSetFileName      0000000000005478 f   HexEdit:libfileimage.obj
+ 0001:00005278       HFileImageGetFileInfo      0000000000005518 f   HexEdit:libfileimage.obj
+ 0001:000052f0       HFileImageRead             0000000000005590 f   HexEdit:libfileimage.obj
+ 0001:00005b30       HFileImageSave             0000000000005dd0 f   HexEdit:libfileimage.obj
+ 0001:00005edc       LibCheckVarGetFlag         000000000000617c f   EfiShellLib:VarCheck.obj
+ 0001:00005f20       iCompareSetFlag            00000000000061c0 f   EfiShellLib:VarCheck.obj
+ 0001:00005f7c       LibCheckVariables          000000000000621c f   EfiShellLib:VarCheck.obj
+ 0001:000062c8       InitializeUnicodeCollationSupportWorker 0000000000006568 f   EfiShellLib:Init.obj
+ 0001:000063c4       LibInitializeStrings       0000000000006664 f   EfiShellLib:Init.obj
+ 0001:000064b4       LibInitializeShellApplication 0000000000006754 f   EfiShellLib:Init.obj
+ 0001:0000671c       ShellGetMap                00000000000069bc f   EfiShellLib:ShellEnvInt.obj
+ 0001:00006790       _SPrint                    0000000000006a30 f   EfiShellLib:IO.obj
+ 0001:00006808       _PoolCatPrint              0000000000006aa8 f   EfiShellLib:IO.obj
+ 0001:00006854       SPrint                     0000000000006af4 f   EfiShellLib:IO.obj
+ 0001:000068c8       Print                      0000000000006b68 f   EfiShellLib:IO.obj
+ 0001:00006908       PoolPrint                  0000000000006ba8 f   EfiShellLib:IO.obj
+ 0001:00006954       PrintToken                 0000000000006bf4 f   EfiShellLib:IO.obj
+ 0001:00006a24       PrintAt                    0000000000006cc4 f   EfiShellLib:IO.obj
+ 0001:00006a54       _IPrint                    0000000000006cf4 f   EfiShellLib:IO.obj
+ 0001:00006b30       PFLUSH                     0000000000006dd0 f   EfiShellLib:IO.obj
+ 0001:00006bf0       PSETATTR                   0000000000006e90 f   EfiShellLib:IO.obj
+ 0001:00006c34       PPUTC                      0000000000006ed4 f   EfiShellLib:IO.obj
+ 0001:00006cb0       PITEM                      0000000000006f50 f   EfiShellLib:IO.obj
+ 0001:00006de0       _Print                     0000000000007080 f   EfiShellLib:IO.obj
+ 0001:000073f8       SetPageBreak               0000000000007698 f   EfiShellLib:IO.obj
+ 0001:0000750c       IFlushWithPageBreak        00000000000077ac f   EfiShellLib:IO.obj
+ 0001:00007650       _PoolPrint                 00000000000078f0 f   EfiShellLib:IO.obj
+ 0001:000076d4       StrCat                     0000000000007974 f   EfiShellLib:Str.obj
+ 0001:00007714       LibStubMetaiMatch          00000000000079b4 f   EfiShellLib:Str.obj
+ 0001:00007720       MetaMatch                  00000000000079c0 f   EfiShellLib:Str.obj
+ 0001:00007938       LibStubStriCmp             0000000000007bd8 f   EfiShellLib:Str.obj
+ 0001:000079bc       LibStubStrUpr              0000000000007c5c f   EfiShellLib:Str.obj
+ 0001:000079dc       LibStubStrLwr              0000000000007c7c f   EfiShellLib:Str.obj
+ 0001:000079fc       StrDuplicate               0000000000007c9c f   EfiShellLib:Str.obj
+ 0001:00007a64       CopyMem                    0000000000007d04 f   EfiShellLib:Mem.obj
+ 0001:00007aa8       AllocatePool               0000000000007d48 f   EfiShellLib:Mem.obj
+ 0001:00007adc       ReallocatePool             0000000000007d7c f   EfiShellLib:Mem.obj
+ 0001:00007b50       AllocateZeroPool           0000000000007df0 f   EfiShellLib:Mem.obj
+ 0001:00007b7c       LibGetVariableAndSize      0000000000007e1c f   EfiShellLib:Misc.obj
+ 0001:00007c08       GrowBuffer                 0000000000007ea8 f   EfiShellLib:Misc.obj
+ 0001:00007ca8       GuidToString               0000000000007f48 f   EfiShellLib:Misc.obj
+ 0001:00007db8       StatusToString             0000000000008058 f   EfiShellLib:Misc.obj
+ 0001:00008158       ValueToString              00000000000083f8 f   EfiShellLib:Misc.obj
+ 0001:00008240       GetBestLanguage            00000000000084e0 f   EfiShellLib:Misc.obj
+ 0001:0000839c       LibSelectBestLanguage      000000000000863c f   EfiShellLib:Misc.obj
+ 0001:00008430       LocateHiiProtocols         00000000000086d0 f   EfiShellLib:HiiSupport.obj
+ 0001:0000847c       PreparePackageList         000000000000871c f   EfiShellLib:HiiSupport.obj
+ 0001:00008570       LibGetString               0000000000008810 f   EfiShellLib:HiiSupport.obj
+ 0001:00008700       LibDevicePathToInterface   00000000000089a0 f   EfiShellLib:DPath.obj
+ 0001:00008784       LibLocateHandle            0000000000008a24 f   EfiShellLib:Handle.obj
+ 0001:00008828       LibLocateProtocol          0000000000008ac8 f   EfiShellLib:Handle.obj
+ 0002:00000000       HexeditCheckList           0000000000008b80     HexEdit:main.obj
+ 0002:00000090       EfiHexeditGuid             0000000000008c10     HexEdit:main.obj
+ 0002:000000a0       HMainEditorConst           0000000000008c20     HexEdit:libEditor.obj
+ 0002:00000110       HBufferImageConst          0000000000008c90     HexEdit:libBufferImage.obj
+ 0002:00000190       HexEditStrings             0000000000008d10     HexEdit:AutoGen.obj
+ 0002:000014a0       HMainMenuItems             000000000000a020     HexEdit:libMenuBar.obj
+ 0002:00001550       HMainMenuBarConst          000000000000a0d0     HexEdit:libMenuBar.obj
+ 0002:00001558       PoolAllocationType         000000000000a0d8     EfiShellLib:Data.obj
+ 0002:00001560       ShellEnvProtocol           000000000000a0e0     EfiShellLib:Data.obj
+ 0002:00001570       LibStubUnicodeInterface    000000000000a0f0     EfiShellLib:Data.obj
+ 0002:000015a8       UnicodeInterface           000000000000a128     EfiShellLib:Data.obj
+ 0002:000015b0       SESGuid                    000000000000a130     EfiShellLib:Init.obj
+ 0002:000015c0       ShellInterfaceProtocol     000000000000a140     EfiShellLib:Misc.obj
+ 0002:000015d0       gEfiSimplePointerProtocolGuid 000000000000a150     EfiProtocolLib:SimplePointer.obj
+ 0002:000015e0       gEfiBlockIoProtocolGuid    000000000000a160     EfiProtocolLib:BlockIo.obj
+ 0002:000015f0       gEfiPciRootBridgeIoProtocolGuid 000000000000a170     EfiProtocolLib:PciRootBridgeIo.obj
+ 0002:00001600       gEfiFileSystemInfoGuid     000000000000a180     EfiProtocolLib:FileSystemInfo.obj
+ 0002:00001610       gEfiSimpleFileSystemProtocolGuid 000000000000a190     EfiProtocolLib:SimpleFileSystem.obj
+ 0002:00001620       gEfiFileInfoGuid           000000000000a1a0     EfiProtocolLib:FileInfo.obj
+ 0002:00001630       gEfiLoadedImageProtocolGuid 000000000000a1b0     EfiProtocolLib:LoadedImage.obj
+ 0002:00001640       gEfiUnicodeCollation2ProtocolGuid 000000000000a1c0     EfiProtocolLib:UnicodeCollation2.obj
+ 0002:00001650       gEfiUnicodeCollationProtocolGuid 000000000000a1d0     EfiProtocolLib:UnicodeCollation.obj
+ 0002:00001660       gEfiHiiStringProtocolGuid  000000000000a1e0     EfiProtocolLib:HiiString.obj
+ 0002:00001670       gEfiHiiDatabaseProtocolGuid 000000000000a1f0     EfiProtocolLib:HiiDatabase.obj
+ 0002:00001680       gEfiGlobalVariableGuid     000000000000a200     EfiGuidLib:GlobalVariable.obj
+ 0002:00001690       ??_C@_15OLECOAGL@?$AA?9?$AAf?$AA?$AA@ 000000000000a210     HexEdit:main.obj
+ 0002:00001698       ??_C@_15EBELCIOA@?$AA?9?$AAd?$AA?$AA@ 000000000000a218     HexEdit:main.obj
+ 0002:000016a0       ??_C@_15DMEDGHGK@?$AA?9?$AAm?$AA?$AA@ 000000000000a220     HexEdit:main.obj
+ 0002:000016a8       ??_C@_15FNEHKAED@?$AA?9?$AA?$DP?$AA?$AA@ 000000000000a228     HexEdit:main.obj
+ 0002:000016b0       ??_C@_15GECAHHDM@?$AA?9?$AAb?$AA?$AA@ 000000000000a230     HexEdit:main.obj
+ 0002:000016b8       ??_C@_19EILFCCEC@?$AA1?$AA?4?$AA1?$AA0?$AA?$AA@ 000000000000a238     HexEdit:main.obj
+ 0002:000016c8       ??_C@_1BA@NLOHLIAA@?$AAh?$AAe?$AAx?$AAe?$AAd?$AAi?$AAt?$AA?$AA@ 000000000000a248     HexEdit:main.obj
+ 0002:000016d8       ??_C@_15GANGMFKL@?$AA?$CF?$AAs?$AA?$AA@ 000000000000a258     HexEdit:main.obj
+ 0002:000016e0       ??_C@_11LOCGONAA@?$AA?$AA@ 000000000000a260     HexEdit:main.obj
+ 0002:000016e8       ??_C@_1BM@IIPKAMAO@?$AAN?$AAe?$AAw?$AAF?$AAi?$AAl?$AAe?$AA?$CF?$AAd?$AA?4?$AAb?$AAi?$AAn?$AA?$AA@ 000000000000a268     HexEdit:main.obj
+ 0002:00001708       ??_C@_1BI@EOEGBKEM@?$AAN?$AAe?$AAw?$AAF?$AAi?$AAl?$AAe?$AA?4?$AAb?$AAi?$AAn?$AA?$AA@ 000000000000a288     HexEdit:main.obj
+ 0002:00001720       ??_C@_1DA@GGLHBKOP@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAM?$AAo?$AAu?$AAs?$AAe?$AA?5?$AAM?$AAo?$AAv?$AAe?$AAm?$AAe?$AAn?$AAt?$AA?5?$AA?$AA@ 000000000000a2a0     HexEdit:libEditor.obj
+ 0002:00001750       ??_C@_1CA@DIEHGKLA@?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?5?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AA?$AA@ 000000000000a2d0     HexEdit:libEditor.obj
+ 0002:00001770       ??_C@_1CM@BMOMFGJM@?$AAD?$AAi?$AAs?$AAk?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?4?$AA?5?$AAT?$AAr?$AAy?$AA?5?$AAA?$AAg?$AAa?$AAi?$AAn?$AA?$AA@ 000000000000a2f0     HexEdit:libEditor.obj
+ 0002:000017a0       ??_C@_1FK@DGMBPBDL@?$AAD?$AAi?$AAs?$AAk?$AA?1?$AAM?$AAe?$AAm?$AA?5?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAL?$AAe?$AAn?$AAg?$AAt?$AAh?$AA?5?$AAs?$AAh?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo@ 000000000000a320     HexEdit:libEditor.obj
+ 0002:00001800       ??_C@_19KDMGDCHB@?$AA?$CF?$AA8?$AAX?$AA?5?$AA?$AA@ 000000000000a380     HexEdit:libBufferImage.obj
+ 0002:0000180c       ??_C@_13COJANIEC@?$AA0?$AA?$AA@ 000000000000a38c     HexEdit:libBufferImage.obj
+ 0002:00001810       ??_C@_17GMAIGMDG@?$AA?$CF?$AAx?$AA?5?$AA?$AA@ 000000000000a390     HexEdit:libBufferImage.obj
+ 0002:00001818       ??_C@_19GNCKHPDA@?$AA?$CF?$AAx?$AA?5?$AA?5?$AA?$AA@ 000000000000a398     HexEdit:libBufferImage.obj
+ 0002:00001828       ??_C@_19NMAFMAH@?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$AA@ 000000000000a3a8     HexEdit:libBufferImage.obj
+ 0002:00001838       ??_C@_17MEDFOIMI@?$AA?5?$AA?5?$AA?5?$AA?$AA@ 000000000000a3b8     HexEdit:libBufferImage.obj
+ 0002:00001840       ??_C@_15DAMPJCDE@?$AA?$CF?$AAc?$AA?$AA@ 000000000000a3c0     HexEdit:libBufferImage.obj
+ 0002:00001848       ??_C@_13HOIJIPNN@?$AA?5?$AA?$AA@ 000000000000a3c8     HexEdit:libBufferImage.obj
+ 0002:0000184c       ??_C@_15OJKDPEFE@?$AA?5?$AA?5?$AA?$AA@ 000000000000a3cc     HexEdit:libBufferImage.obj
+ 0002:00001854       ??_C@_15LHNHECKK@?$AA?$CF?$AAx?$AA?$AA@ 000000000000a3d4     HexEdit:libBufferImage.obj
+ 0002:0000185c       ??_C@_13NOLLCAOD@?$AA?$AA?$AA?$AA@ 000000000000a3dc     HexEdit:libStatusBar.obj
+ 0002:00001860       ??_C@_1DA@LNPLLBJN@?$AA?5?$AA?5?$AAO?$AAf?$AAf?$AAs?$AAe?$AAt?$AA?3?$AA?5?$AA?$CF?$AA8?$AAX?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$CF?$AAs?$AA?$AA@ 000000000000a3e0     HexEdit:libStatusBar.obj
+ 0002:00001890       ??_C@_1M@HIGACCME@?$AA0?$AA?4?$AA9?$AA9?$AA?$AA?$AA?$AA@ 000000000000a410     HexEdit:libTitleBar.obj
+ 0002:000018a0       ??_C@_1CA@FKALKDAG@?$AAE?$AAF?$AAI?$AA?5?$AAH?$AAe?$AAx?$AA?5?$AAE?$AAd?$AAi?$AAt?$AAo?$AAr?$AA?$AA?$AA?$AA@ 000000000000a420     HexEdit:libTitleBar.obj
+ 0002:000018c0       ??_C@_1BC@FAEOEMDP@?$AA?5?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?5?$AA?$CF?$AAs?$AA?$AA@ 000000000000a440     HexEdit:libTitleBar.obj
+ 0002:000018d8       ??_C@_1M@EHCOGDLN@?$AA?$CF?$AAs?$AA?5?$AA?5?$AA?5?$AA?$AA@ 000000000000a458     HexEdit:libTitleBar.obj
+ 0002:000018e8       ??_C@_17LGKOMLJ@?$AA?4?$AA?4?$AA?4?$AA?$AA@ 000000000000a468     HexEdit:libTitleBar.obj
+ 0002:000018f0       ??_C@_1BI@BBKMDLOK@?$AA?5?$AA?5?$AA?5?$AAM?$AAo?$AAd?$AAi?$AAf?$AAi?$AAe?$AAd?$AA?$AA@ 000000000000a470     HexEdit:libTitleBar.obj
+ 0002:00001908       ??_C@_1O@HMNHGLNF@?$AAY?$AAe?$AAs?$AA?1?$AAN?$AAo?$AA?$AA@ 000000000000a488     HexEdit:libInputBar.obj
+ 0002:00001918       ??_C@_17GMPJMPF@?$AA?$CF?$AAs?$AA?5?$AA?$AA@ 000000000000a498     HexEdit:libInputBar.obj
+ 0002:00001920       ??_C@_1CA@GKCIHHGE@?$AA?$CF?$AAE?$AA?$CF?$AAs?$AA?$CF?$AAN?$AA?5?$AA?$CF?$AAH?$AA?$CF?$AAs?$AA?$CF?$AAN?$AA?5?$AA?5?$AA?$AA@ 000000000000a4a0     HexEdit:libMenuBar.obj
+ 0002:00001940       ??_C@_1CC@IAMKKFJJ@?$AA?$CF?$AAE?$AA?$CF?$AAs?$AA?$CF?$AAN?$AA?5?$AA?5?$AA?$CF?$AAH?$AA?$CF?$AAs?$AA?$CF?$AAN?$AA?5?$AA?5?$AA?$AA@ 000000000000a4c0     HexEdit:libMenuBar.obj
+ 0002:00001970       ??_C@_1FC@OIPNEKNP@?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAm?$AAo?$AAd?$AAi?$AAf?$AAi?$AAe?$AAd?$AA?4?$AA?5?$AAS?$AAa?$AAv?$AAe?$AA?5?$AA?$CI?$AAY?$AAe?$AAs?$AA?1?$AAN?$AAo?$AA?1?$AAC?$AAa@ 000000000000a4f0     HexEdit:libMenuBar.obj
+ 0002:000019c8       ??_C@_1CI@PPPODMPB@?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAN?$AAa?$AAm?$AAe?$AA?5?$AAt?$AAo?$AA?5?$AAO?$AAp?$AAe?$AAn?$AA?3?$AA?5?$AA?$AA@ 000000000000a548     HexEdit:libMenuBar.obj
+ 0002:000019f0       ??_C@_1CE@PAJDEKJB@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAN?$AAa?$AAm?$AAe?$AA?$AA@ 000000000000a570     HexEdit:libMenuBar.obj
+ 0002:00001a18       ??_C@_1CO@DPNHKEEI@?$AAB?$AAl?$AAo?$AAc?$AAk?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAt?$AAo?$AA?5?$AAO?$AAp?$AAe?$AAn?$AA?3?$AA?5?$AA?$AA@ 000000000000a598     HexEdit:libMenuBar.obj
+ 0002:00001a48       ??_C@_1CE@LPNEOONB@?$AAF?$AAi?$AAr?$AAs?$AAt?$AA?5?$AAB?$AAl?$AAo?$AAc?$AAk?$AA?5?$AAN?$AAo?$AA?4?$AA?3?$AA?5?$AA?$AA@ 000000000000a5c8     HexEdit:libMenuBar.obj
+ 0002:00001a70       ??_C@_1CG@DGHIFMFN@?$AAN?$AAu?$AAm?$AAb?$AAe?$AAr?$AA?5?$AAo?$AAf?$AA?5?$AAB?$AAl?$AAo?$AAc?$AAk?$AAs?$AA?3?$AA?5?$AA?$AA@ 000000000000a5f0     HexEdit:libMenuBar.obj
+ 0002:00001a98       ??_C@_1CE@CFGOJKIA@?$AAS?$AAt?$AAa?$AAr?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAO?$AAf?$AAf?$AAs?$AAe?$AAt?$AA?3?$AA?5?$AA?$AA@ 000000000000a618     HexEdit:libMenuBar.obj
+ 0002:00001ac0       ??_C@_1BM@CIHHBIME@?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAS?$AAi?$AAz?$AAe?$AA?3?$AA?5?$AA?$AA@ 000000000000a640     HexEdit:libMenuBar.obj
+ 0002:00001ae0       ??_C@_1CE@EKGFFJHF@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAp?$AAa?$AAr?$AAa?$AAm?$AAe?$AAt?$AAe?$AAr?$AA?$AA@ 000000000000a660     HexEdit:libMenuBar.obj
+ 0002:00001b10       ??_C@_1CG@CCBIICDO@?$AAR?$AAe?$AAa?$AAd?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$CB?$AA?$AA@ 000000000000a690     HexEdit:libMenuBar.obj
+ 0002:00001b40       ??_C@_1HG@FPDDGJIB@?$AAD?$AAa?$AAn?$AAg?$AAe?$AAr?$AAo?$AAu?$AAs?$AA?5?$AAt?$AAo?$AA?5?$AAs?$AAa?$AAv?$AAe?$AA?5?$AAd?$AAi?$AAs?$AAk?$AA?1?$AAm?$AAe?$AAm?$AA?5?$AAb?$AAu?$AAf?$AAf?$AAe@ 000000000000a6c0     HexEdit:libMenuBar.obj
+ 0002:00001bc0       ??_C@_1DK@LMKJFHLE@?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AAS?$AAa?$AAv?$AAe?$AA?3?$AA?5?$AAP?$AAr?$AAo?$AAb?$AAl?$AAe?$AAm?$AAs?$AA?5?$AAW?$AAr?$AAi?$AAt?$AAi?$AAn?$AAg?$AA?$AA@ 000000000000a740     HexEdit:libMenuBar.obj
+ 0002:00001c00       ??_C@_1CG@NJHNCLOJ@?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAt?$AAo?$AA?5?$AAS?$AAa?$AAv?$AAe?$AA?3?$AA?5?$AA?$FL?$AA?$CF?$AAs?$AA?$FN?$AA?$AA@ 000000000000a780     HexEdit:libMenuBar.obj
+ 0002:00001c30       ??_C@_1BM@HDPINFLL@?$AAA?$AAc?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAD?$AAe?$AAn?$AAi?$AAe?$AAd?$AA?$AA@ 000000000000a7b0     HexEdit:libMenuBar.obj
+ 0002:00001c50       ??_C@_1FE@GJKODLCN@?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAe?$AAx?$AAi?$AAs?$AAt?$AAs?$AA?4?$AA?5?$AAO?$AAv?$AAe?$AAr?$AAw?$AAr?$AAi?$AAt?$AAe?$AA?5?$AA?$CI?$AAY?$AAe?$AAs?$AA?1?$AAN?$AAo?$AA?1?$AAC@ 000000000000a7d0     HexEdit:libMenuBar.obj
+ 0002:00001cb0       ??_C@_1CI@CKMNKNGO@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAB?$AAl?$AAo?$AAc?$AAk?$AA?5?$AAS?$AAt?$AAa?$AAr?$AAt?$AA?$AA@ 000000000000a830     HexEdit:libMenuBar.obj
+ 0002:00001ce0       ??_C@_1CE@EGEFGBDB@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAB?$AAl?$AAo?$AAc?$AAk?$AA?5?$AAE?$AAn?$AAd?$AA?$AA@ 000000000000a860     HexEdit:libMenuBar.obj
+ 0002:00001d10       ??_C@_1CK@NPEDAFHE@?$AAN?$AAo?$AA?5?$AAB?$AAl?$AAo?$AAc?$AAk?$AA?5?$AAi?$AAs?$AA?5?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAe?$AAd?$AA?$AA@ 000000000000a890     HexEdit:libMenuBar.obj
+ 0002:00001d40       ??_C@_1CC@EMEHDNOH@?$AAN?$AAo?$AAt?$AAh?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAo?$AA?5?$AAP?$AAa?$AAs?$AAt?$AAe?$AA?$AA@ 000000000000a8c0     HexEdit:libMenuBar.obj
+ 0002:00001d68       ??_C@_1BO@CAEDEPBC@?$AAG?$AAo?$AA?5?$AAT?$AAo?$AA?5?$AAO?$AAf?$AAf?$AAs?$AAe?$AAt?$AA?3?$AA?5?$AA?$AA@ 000000000000a8e8     HexEdit:libMenuBar.obj
+ 0002:00001d90       ??_C@_1BO@COIEEELA@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAO?$AAf?$AAf?$AAs?$AAe?$AAt?$AA?$AA@ 000000000000a910     HexEdit:libMenuBar.obj
+ 0002:00001db0       ??_C@_1CG@GGCANCNJ@?$AAC?$AAa?$AAn?$AAn?$AAo?$AAt?$AA?5?$AAF?$AAi?$AAn?$AAd?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$AA@ 000000000000a930     HexEdit:libdiskimage.obj
+ 0002:00001de0       ??_C@_1CC@BOLHEDEM@?$AAR?$AAe?$AAa?$AAd?$AA?5?$AAD?$AAi?$AAs?$AAk?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$AA@ 000000000000a960     HexEdit:libdiskimage.obj
+ 0002:00001e10       ??_C@_1CM@FECOOMNI@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAO?$AAf?$AAf?$AAs?$AAe?$AAt?$AA?5?$AA?$CL?$AA?5?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 000000000000a990     HexEdit:libdiskimage.obj
+ 0002:00001e40       ??_C@_1BM@EIMMJFOI@?$AA?$CF?$AAd?$AA?5?$AAL?$AAi?$AAn?$AAe?$AAs?$AA?5?$AAR?$AAe?$AAa?$AAd?$AA?$AA@ 000000000000a9c0     HexEdit:libdiskimage.obj
+ 0002:00001e60       ??_C@_1CG@PKEPGPJG@?$AAR?$AAe?$AAa?$AAd?$AA?5?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$AA@ 000000000000a9e0     HexEdit:libMemImage.obj
+ 0002:00001e90       ??_C@_1EA@GENECJI@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AA?5?$AAS?$AAp?$AAe?$AAc?$AAi?$AAf?$AAi?$AAe?$AAd?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAA?$AAc?$AAc?$AAe?$AAs?$AAs?$AAi?$AAb?$AAl?$AAe?$AA?$AA@ 000000000000aa10     HexEdit:libMemImage.obj
+ 0002:00001ed0       ??_C@_1BG@BHAMKCMJ@?$AAD?$AAi?$AAs?$AAk?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 000000000000aa50     HexEdit:libfileimage.obj
+ 0002:00001ef0       ??_C@_1DI@JJCDHCMP@?$AAD?$AAi?$AAr?$AAe?$AAc?$AAt?$AAo?$AAr?$AAy?$AA?5?$AAC?$AAa?$AAn?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAB?$AAe?$AA?5?$AAE?$AAd?$AAi?$AAt?$AAe?$AAd?$AA?$AA@ 000000000000aa70     HexEdit:libfileimage.obj
+ 0002:00001f30       ??_C@_1CC@ECPIEGMO@?$AAR?$AAe?$AAa?$AAd?$AA?5?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$AA@ 000000000000aab0     HexEdit:libfileimage.obj
+ 0002:00001f54       ??_C@_13FPGAJAPJ@?$AA?2?$AA?$AA@ 000000000000aad4     HexEdit:libfileimage.obj
+ 0002:00001f60       ??_C@_1DE@MFJNINFA@?$AAW?$AAA?$AAR?$AAN?$AAI?$AAN?$AAG?$AA?3?$AA?5?$AAV?$AAo?$AAl?$AAu?$AAm?$AAe?$AA?5?$AAR?$AAe?$AAa?$AAd?$AA?5?$AAO?$AAn?$AAl?$AAy?$AA?$AA@ 000000000000aae0     HexEdit:libfileimage.obj
+ 0002:00001fa0       ??_C@_1EA@KMGLANCH@?$AAR?$AAe?$AAa?$AAd?$AA?5?$AAO?$AAn?$AAl?$AAy?$AA?5?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAC?$AAa?$AAn?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAB?$AAe?$AA?5?$AAS?$AAa?$AAv?$AAe?$AAd?$AA?$AA@ 000000000000ab20     HexEdit:libfileimage.obj
+ 0002:00001fe0       ??_C@_1DG@JNGOCPNM@?$AAD?$AAi?$AAr?$AAe?$AAc?$AAt?$AAo?$AAr?$AAy?$AA?5?$AAC?$AAa?$AAn?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAB?$AAe?$AA?5?$AAS?$AAa?$AAv?$AAe?$AAd?$AA?$AA@ 000000000000ab60     HexEdit:libfileimage.obj
+ 0002:00002020       ??_C@_1CE@ICGBOPPJ@?$AAW?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$AA@ 000000000000aba0     HexEdit:libfileimage.obj
+ 0002:00002050       ??_C@_1CG@LGANFAB@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$AA@ 000000000000abd0     HexEdit:libfileimage.obj
+ 0002:00002078       ??_C@_1BO@FBLHKMPK@?$AA?$CF?$AAd?$AA?5?$AAL?$AAi?$AAn?$AAe?$AAs?$AA?5?$AAW?$AAr?$AAo?$AAt?$AAe?$AA?$AA@ 000000000000abf8     HexEdit:libfileimage.obj
+ 0002:00002098       ??_C@_06OJHGLDPL@?$CInull?$CJ?$AA@ 000000000000ac18     EfiShellLib:IO.obj
+ 0002:000020a0       ??_C@_1O@CEDCILHN@?$AA?$CI?$AAn?$AAu?$AAl?$AAl?$AA?$CJ?$AA?$AA@ 000000000000ac20     EfiShellLib:IO.obj
+ 0002:000020b0       ??_C@_1EM@PFLICCFE@?$AAP?$AAr?$AAe?$AAs?$AAs?$AA?5?$AAE?$AAN?$AAT?$AAE?$AAR?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAo?$AAn?$AAt?$AAi?$AAn?$AAu?$AAe?$AA?0?$AA?5?$AA?8?$AAq?$AA?8?$AA?5?$AAt?$AAo?$AA?5@ 000000000000ac30     EfiShellLib:IO.obj
+ 0002:000020fc       ??_C@_15JNBOKNOG@?$AA?$AN?$AA?6?$AA?$AA@ 000000000000ac7c     EfiShellLib:IO.obj
+ 0002:00002108       ??_C@_19BALNHBBC@?$AAL?$AAa?$AAn?$AAg?$AA?$AA@ 000000000000ac88     EfiShellLib:Misc.obj
+ 0002:00002118       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg?$AA?$AA@ 000000000000ac98     EfiShellLib:Misc.obj
+ 0002:00002140       ??_C@_1GC@MIJCAPDC@?$AA?$CF?$AA0?$AA8?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx@ 000000000000acc0     EfiShellLib:Misc.obj
+ 0002:000021a8       ??_C@_1BA@JFDCMKFN@?$AAS?$AAu?$AAc?$AAc?$AAe?$AAs?$AAs?$AA?$AA@ 000000000000ad28     EfiShellLib:Misc.obj
+ 0002:000021b8       ??_C@_1BG@IPPBEJLN@?$AAL?$AAo?$AAa?$AAd?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 000000000000ad38     EfiShellLib:Misc.obj
+ 0002:000021d0       ??_C@_1CE@FAJJAJHO@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAP?$AAa?$AAr?$AAa?$AAm?$AAe?$AAt?$AAe?$AAr?$AA?$AA@ 000000000000ad50     EfiShellLib:Misc.obj
+ 0002:000021f8       ??_C@_1BI@HACEKCKB@?$AAU?$AAn?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAe?$AAd?$AA?$AA@ 000000000000ad78     EfiShellLib:Misc.obj
+ 0002:00002210       ??_C@_1CA@MKNIKBGN@?$AAB?$AAa?$AAd?$AA?5?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 000000000000ad90     EfiShellLib:Misc.obj
+ 0002:00002230       ??_C@_1CC@GADLJCKI@?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAT?$AAo?$AAo?$AA?5?$AAS?$AAm?$AAa?$AAl?$AAl?$AA?$AA@ 000000000000adb0     EfiShellLib:Misc.obj
+ 0002:00002258       ??_C@_1BE@HFDAGNKF@?$AAN?$AAo?$AAt?$AA?5?$AAR?$AAe?$AAa?$AAd?$AAy?$AA?$AA@ 000000000000add8     EfiShellLib:Misc.obj
+ 0002:00002270       ??_C@_1BK@MPLHBIOA@?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 000000000000adf0     EfiShellLib:Misc.obj
+ 0002:00002290       ??_C@_1CA@PAGBHICH@?$AAW?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAP?$AAr?$AAo?$AAt?$AAe?$AAc?$AAt?$AAe?$AAd?$AA?$AA@ 000000000000ae10     EfiShellLib:Misc.obj
+ 0002:000022b0       ??_C@_1CC@JDEEHPBA@?$AAO?$AAu?$AAt?$AA?5?$AAo?$AAf?$AA?5?$AAR?$AAe?$AAs?$AAo?$AAu?$AAr?$AAc?$AAe?$AAs?$AA?$AA@ 000000000000ae30     EfiShellLib:Misc.obj
+ 0002:000022d8       ??_C@_1CC@IIFGLPAC@?$AAV?$AAo?$AAl?$AAu?$AAm?$AAe?$AA?5?$AAC?$AAo?$AAr?$AAr?$AAu?$AAp?$AAt?$AAe?$AAd?$AA?$AA@ 000000000000ae58     EfiShellLib:Misc.obj
+ 0002:00002300       ??_C@_1BI@KDMJOJPB@?$AAV?$AAo?$AAl?$AAu?$AAm?$AAe?$AA?5?$AAF?$AAu?$AAl?$AAl?$AA?$AA@ 000000000000ae80     EfiShellLib:Misc.obj
+ 0002:00002318       ??_C@_1BC@CAEJNJKB@?$AAN?$AAo?$AA?5?$AAM?$AAe?$AAd?$AAi?$AAa?$AA?$AA@ 000000000000ae98     EfiShellLib:Misc.obj
+ 0002:00002330       ??_C@_1BM@CGJAEDJP@?$AAM?$AAe?$AAd?$AAi?$AAa?$AA?5?$AAC?$AAh?$AAa?$AAn?$AAg?$AAe?$AAd?$AA?$AA@ 000000000000aeb0     EfiShellLib:Misc.obj
+ 0002:00002350       ??_C@_1BE@JGBFLIBK@?$AAN?$AAo?$AAt?$AA?5?$AAF?$AAo?$AAu?$AAn?$AAd?$AA?$AA@ 000000000000aed0     EfiShellLib:Misc.obj
+ 0002:00002368       ??_C@_1BI@JIAAMNOB@?$AAN?$AAo?$AA?5?$AAR?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?$AA@ 000000000000aee8     EfiShellLib:Misc.obj
+ 0002:00002380       ??_C@_1BG@OHLJONME@?$AAN?$AAo?$AA?5?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg?$AA?$AA@ 000000000000af00     EfiShellLib:Misc.obj
+ 0002:00002398       ??_C@_1BC@GINMNENH@?$AAT?$AAi?$AAm?$AAe?$AA?5?$AAO?$AAu?$AAt?$AA?$AA@ 000000000000af18     EfiShellLib:Misc.obj
+ 0002:000023b0       ??_C@_1BI@MNIOFEEM@?$AAN?$AAo?$AAt?$AA?5?$AAS?$AAt?$AAa?$AAr?$AAt?$AAe?$AAd?$AA?$AA@ 000000000000af30     EfiShellLib:Misc.obj
+ 0002:000023c8       ??_C@_1CA@CNMNDJCM@?$AAA?$AAl?$AAr?$AAe?$AAa?$AAd?$AAy?$AA?5?$AAS?$AAt?$AAa?$AAr?$AAt?$AAe?$AAd?$AA?$AA@ 000000000000af48     EfiShellLib:Misc.obj
+ 0002:000023e8       ??_C@_1BA@JCPMFPEO@?$AAA?$AAb?$AAo?$AAr?$AAt?$AAe?$AAd?$AA?$AA@ 000000000000af68     EfiShellLib:Misc.obj
+ 0002:000023f8       ??_C@_1BG@GJCEBLMD@?$AAI?$AAC?$AAM?$AAP?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 000000000000af78     EfiShellLib:Misc.obj
+ 0002:00002410       ??_C@_1BG@MPDDBEKI@?$AAT?$AAF?$AAT?$AAP?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 000000000000af90     EfiShellLib:Misc.obj
+ 0002:00002428       ??_C@_1BO@MGICIKC@?$AAP?$AAr?$AAo?$AAt?$AAo?$AAc?$AAo?$AAl?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 000000000000afa8     EfiShellLib:Misc.obj
+ 0002:00002448       ??_C@_1CM@OIKNIHHI@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?5?$AAG?$AAl?$AAy?$AAp?$AAh?$AA?$AA@ 000000000000afc8     EfiShellLib:Misc.obj
+ 0002:00002478       ??_C@_1CO@MFHEGPPN@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAD?$AAe?$AAl?$AAe?$AAt?$AAe?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?$AA@ 000000000000aff8     EfiShellLib:Misc.obj
+ 0002:000024a8       ??_C@_1CM@FKHEOEHO@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAW?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?$AA@ 000000000000b028     EfiShellLib:Misc.obj
+ 0002:000024d8       ??_C@_1DC@LAAGMHGB@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAT?$AAo?$AAo?$AA?5?$AAS?$AAm?$AAa?$AAl?$AAl?$AA?$AA@ 000000000000b058     EfiShellLib:Misc.obj
+ 0002:00002510       ??_C@_1CK@CPNEFGBF@?$AAI?$AAn?$AAc?$AAo?$AAm?$AAp?$AAa?$AAt?$AAi?$AAb?$AAl?$AAe?$AA?5?$AAV?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?$AA@ 000000000000b090     EfiShellLib:Misc.obj
+ 0002:00002540       ??_C@_1CG@CONBDECJ@?$AAS?$AAe?$AAc?$AAu?$AAr?$AAi?$AAt?$AAy?$AA?5?$AAV?$AAi?$AAo?$AAl?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 000000000000b0c0     EfiShellLib:Misc.obj
+ 0002:00002568       ??_C@_1BE@LNMOCCLF@?$AAC?$AAR?$AAC?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 000000000000b0e8     EfiShellLib:Misc.obj
+ 0002:00002580       ??_C@_1CE@OCFFKMII@?$AAN?$AAo?$AAt?$AA?5?$AAA?$AAv?$AAa?$AAi?$AAl?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAY?$AAe?$AAt?$AA?$AA@ 000000000000b100     EfiShellLib:Misc.obj
+ 0002:000025a8       ??_C@_1BK@BJJGPOPI@?$AAU?$AAn?$AAl?$AAo?$AAa?$AAd?$AA?5?$AAI?$AAm?$AAa?$AAg?$AAe?$AA?$AA@ 000000000000b128     EfiShellLib:Misc.obj
+ 0002:000025c8       ??_C@_1DM@HHKGEKOD@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAR?$AAe?$AAt?$AAu?$AAr?$AAn?$AA?5?$AAF?$AAr?$AAo?$AAm?$AA?5?$AAL?$AAo?$AAn?$AAg?$AA?5?$AAJ?$AAu?$AAm?$AAp?$AA?$AA@ 000000000000b148     EfiShellLib:Misc.obj
+ 0002:00002604       ??_C@_15BHOFONJE@?$AA?$CF?$AAX?$AA?$AA@ 000000000000b184     EfiShellLib:Misc.obj
+ 0002:00002610       ??_C@_1DI@JHANLOAN@?$AA?$CF?$AA0?$AA2?$AAd?$AA?1?$AA?$CF?$AA0?$AA2?$AAd?$AA?1?$AA?$CF?$AA0?$AA2?$AAd?$AA?5?$AA?5?$AA?$CF?$AA0?$AA2?$AAd?$AA?3?$AA?$CF?$AA0?$AA2?$AAd?$AA?$CF?$AAc?$AA?$AA@ 000000000000b190     EfiShellLib:Misc.obj
+ 0002:00002648       ??_C@_00CNPNBAHC@?$AA@     000000000000b1c8     EfiShellLib:Misc.obj
+ 0002:0000264c       ??_C@_03LKLGDMJI@eng?$AA@  000000000000b1cc     EfiShellLib:Misc.obj
+ 0002:00002650       ??_C@_05JJLPJMLG@en?9US?$AA@ 000000000000b1d0     EfiShellLib:Misc.obj
+ 0002:00002658       ca                         000000000000b1d8     EfiShellLib:Misc.obj
+ 0002:00002680       HMainStatusBarConst        000000000000b200     HexEdit:libStatusBar.obj
+ 0002:00002688       HMainTitleBarConst         000000000000b208     HexEdit:libTitleBar.obj
+ 0002:00002690       HMainInputBarConst         000000000000b210     HexEdit:libInputBar.obj
+ 0002:000026a8       HClipBoardConst            000000000000b228     HexEdit:libclipboard.obj
+ 0002:000026b8       HDiskImageConst            000000000000b238     HexEdit:libdiskimage.obj
+ 0002:000026d8       HMemImageConst             000000000000b258     HexEdit:libMemImage.obj
+ 0002:000026f0       HFileImageConst            000000000000b270     HexEdit:libfileimage.obj
+ 0002:00002768       ShellLibInitialized        000000000000b2e8     EfiShellLib:Data.obj
+ 0002:00002769       HiiInitialized             000000000000b2e9     EfiShellLib:Init.obj
+ 0002:00002770       HiiLibHandle               000000000000b2f0     EfiShellLib:Init.obj
+ 0002:00002778       NumStrings                 000000000000b2f8     EfiShellLib:Init.obj
+ 0002:00002788       gLibHiiDatabase            000000000000b308     EfiShellLib:HiiSupport.obj
+ 0002:00002790       gLibHiiString              000000000000b310     EfiShellLib:HiiSupport.obj
+ 0002:00002798       mHiiProtocolsInitialized   000000000000b318     EfiShellLib:HiiSupport.obj
+ 0002:000027a0       RT                         000000000000b320     <common>
+ 0002:000027c0       mPrintMode                 000000000000b340     <common>
+ 0002:000027f8       SE                         000000000000b378     <common>
+ 0002:00002800       ST                         000000000000b380     <common>
+ 0002:00002808       BS                         000000000000b388     <common>
+ 0002:00002810       SI                         000000000000b390     <common>
+ 0002:00002818       SE2                        000000000000b398     <common>
+ 0002:00002820       HFileImageBackupVar        000000000000b3a0     <common>
+ 0002:00002840       HFileImage                 000000000000b3c0     <common>
+ 0002:00002860       HMemImageBackupVar         000000000000b3e0     <common>
+ 0002:00002880       HMemImage                  000000000000b400     <common>
+ 0002:000028a0       HDiskImageBackupVar        000000000000b420     <common>
+ 0002:000028c0       HDiskImage                 000000000000b440     <common>
+ 0002:000028e0       HClipBoard                 000000000000b460     <common>
+ 0002:000028f0       HMainMenuBar               000000000000b470     <common>
+ 0002:00002900       HMainInputBar              000000000000b480     <common>
+ 0002:00002918       HMainTitleBar              000000000000b498     <common>
+ 0002:00002920       HMainStatusBarBackupVar    000000000000b4a0     <common>
+ 0002:00002928       HStatusStringChanged       000000000000b4a8     <common>
+ 0002:00002930       HMainStatusBar             000000000000b4b0     <common>
+ 0002:00002938       HStatusBarNeedRefresh      000000000000b4b8     <common>
+ 0002:00002939       HBufferImageOnlyLineNeedRefresh 000000000000b4b9     <common>
+ 0002:00002940       HBufferImageBackupVar      000000000000b4c0     <common>
+ 0002:000029b8       HBufferImageMouseNeedRefresh 000000000000b538     <common>
+ 0002:000029c0       HBufferImage               000000000000b540     <common>
+ 0002:00002a38       HBufferImageNeedRefresh    000000000000b5b8     <common>
+ 0002:00002a39       HEditorMouseAction         000000000000b5b9     <common>
+ 0002:00002a40       HOriginalMode              000000000000b5c0     <common>
+ 0002:00002a60       HMainEditorBackupVar       000000000000b5e0     <common>
+ 0002:00002ad0       HEditorExit                000000000000b650     <common>
+ 0002:00002ad1       HEditorFirst               000000000000b651     <common>
+ 0002:00002ad4       HOriginalColors            000000000000b654     <common>
+ 0002:00002ae0       HMainEditor                000000000000b660     <common>
+ 0002:00002b50       HiiHandle                  000000000000b6d0     <common>
+ 0002:00002b58       HImageHandleBackup         000000000000b6d8     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00000edc       HMainEditorHandleMouseInput 000000000000117c f   HexEdit:libEditor.obj
+ 0002:00002660       Hex                        000000000000b1e0     EfiShellLib:Misc.obj
+ 0002:00002780       mShellEnv                  000000000000b300     EfiShellLib:Misc.obj
+ 0003:00000000       $pdata$InitializeEFIHexEditor 000000000000b6e0     HexEdit:main.obj
+ 0003:0000000c       $pdata$HexEditGetDefaultFileName 000000000000b6ec     HexEdit:main.obj
+ 0003:00000018       $pdata$HMainEditorInit     000000000000b6f8     HexEdit:libEditor.obj
+ 0003:00000024       $pdata$HMainEditorCleanup  000000000000b704     HexEdit:libEditor.obj
+ 0003:00000030       $pdata$HMainEditorRefresh  000000000000b710     HexEdit:libEditor.obj
+ 0003:0000003c       $pdata$HMainEditorHandleMouseInput 000000000000b71c     HexEdit:libEditor.obj
+ 0003:00000048       $pdata$HMainEditorKeyInput 000000000000b728     HexEdit:libEditor.obj
+ 0003:00000054       $pdata$HMainEditorBackup   000000000000b734     HexEdit:libEditor.obj
+ 0003:00000060       $pdata$HEditorClearLine    000000000000b740     HexEdit:libMisc.obj
+ 0003:0000006c       $pdata$HStrStr             000000000000b74c     HexEdit:libMisc.obj
+ 0003:00000078       $pdata$HBufferImageInit    000000000000b758     HexEdit:libBufferImage.obj
+ 0003:00000084       $pdata$HBufferImageFreeLines 000000000000b764     HexEdit:libBufferImage.obj
+ 0003:00000090       $pdata$HBufferImagePrintLine 000000000000b770     HexEdit:libBufferImage.obj
+ 0003:0000009c       $pdata$HBufferImageIsInSelectedArea 000000000000b77c     HexEdit:libBufferImage.obj
+ 0003:000000a8       $pdata$HBufferImageRestoreMousePosition 000000000000b788     HexEdit:libBufferImage.obj
+ 0003:000000b4       $pdata$HBufferImageRestorePosition 000000000000b794     HexEdit:libBufferImage.obj
+ 0003:000000c0       $pdata$HBufferImageRefresh 000000000000b7a0     HexEdit:libBufferImage.obj
+ 0003:000000cc       $pdata$HBufferImageRead    000000000000b7ac     HexEdit:libBufferImage.obj
+ 0003:000000d8       $pdata$HBufferImageSave    000000000000b7b8     HexEdit:libBufferImage.obj
+ 0003:000000e4       $pdata$HBufferImageCreateLine 000000000000b7c4     HexEdit:libBufferImage.obj
+ 0003:000000f0       $pdata$HBufferImageHandleInput 000000000000b7d0     HexEdit:libBufferImage.obj
+ 0003:000000fc       $pdata$HBufferImageAddChar 000000000000b7dc     HexEdit:libBufferImage.obj
+ 0003:00000108       $pdata$HBufferImageMovePosition 000000000000b7e8     HexEdit:libBufferImage.obj
+ 0003:00000114       $pdata$HBufferImageDeleteCharacterFromBuffer 000000000000b7f4     HexEdit:libBufferImage.obj
+ 0003:00000120       $pdata$HBufferImageAddCharacterToBuffer 000000000000b800     HexEdit:libBufferImage.obj
+ 0003:0000012c       $pdata$HBufferImageDoBackspace 000000000000b80c     HexEdit:libBufferImage.obj
+ 0003:00000138       $pdata$HBufferImageDoDelete 000000000000b818     HexEdit:libBufferImage.obj
+ 0003:00000144       $pdata$HBufferImageBufferToList 000000000000b824     HexEdit:libBufferImage.obj
+ 0003:00000150       $pdata$HBufferImageListToBuffer 000000000000b830     HexEdit:libBufferImage.obj
+ 0003:0000015c       $pdata$HMainStatusBarSetStatusString 000000000000b83c     HexEdit:libStatusBar.obj
+ 0003:00000168       $pdata$HMainTitleBarRefresh 000000000000b848     HexEdit:libTitleBar.obj
+ 0003:00000174       $pdata$HMainInputBarPrintInput 000000000000b854     HexEdit:libInputBar.obj
+ 0003:00000180       $pdata$HMainInputBarRefresh 000000000000b860     HexEdit:libInputBar.obj
+ 0003:0000018c       $pdata$HMainInputBarSetPrompt 000000000000b86c     HexEdit:libInputBar.obj
+ 0003:00000198       $pdata$HMainInputBarSetStringSize 000000000000b878     HexEdit:libInputBar.obj
+ 0003:000001a4       $pdata$HMainCommandOpenFile 000000000000b884     HexEdit:libMenuBar.obj
+ 0003:000001b0       $pdata$HMainCommandOpenDisk 000000000000b890     HexEdit:libMenuBar.obj
+ 0003:000001bc       $pdata$HMainCommandOpenMemory 000000000000b89c     HexEdit:libMenuBar.obj
+ 0003:000001c8       $pdata$HMainCommandSaveBuffer 000000000000b8a8     HexEdit:libMenuBar.obj
+ 0003:000001d4       $pdata$HMainCommandSelectStart 000000000000b8b4     HexEdit:libMenuBar.obj
+ 0003:000001e0       $pdata$HMainCommandSelectEnd 000000000000b8c0     HexEdit:libMenuBar.obj
+ 0003:000001ec       $pdata$HMainCommandCut     000000000000b8cc     HexEdit:libMenuBar.obj
+ 0003:000001f8       $pdata$HMainCommandPaste   000000000000b8d8     HexEdit:libMenuBar.obj
+ 0003:00000204       $pdata$HMainCommandGoToOffset 000000000000b8e4     HexEdit:libMenuBar.obj
+ 0003:00000210       $pdata$HMainCommandExit    000000000000b8f0     HexEdit:libMenuBar.obj
+ 0003:0000021c       $pdata$HDiskImageSetDiskNameOffsetSize 000000000000b8fc     HexEdit:libdiskimage.obj
+ 0003:00000228       $pdata$HDiskImageRead      000000000000b908     HexEdit:libdiskimage.obj
+ 0003:00000234       $pdata$HDiskImageSave      000000000000b914     HexEdit:libdiskimage.obj
+ 0003:00000240       $pdata$HMemImageRead       000000000000b920     HexEdit:libMemImage.obj
+ 0003:0000024c       $pdata$HMemImageSave       000000000000b92c     HexEdit:libMemImage.obj
+ 0003:00000258       $pdata$HFileImageSetFileName 000000000000b938     HexEdit:libfileimage.obj
+ 0003:00000264       $pdata$HFileImageGetFileInfo 000000000000b944     HexEdit:libfileimage.obj
+ 0003:00000270       $pdata$HFileImageRead      000000000000b950     HexEdit:libfileimage.obj
+ 0003:0000027c       $pdata$HFileImageSave      000000000000b95c     HexEdit:libfileimage.obj
+ 0003:00000288       $pdata$LibCheckVarGetFlag  000000000000b968     EfiShellLib:VarCheck.obj
+ 0003:00000294       $pdata$LibCheckVariables   000000000000b974     EfiShellLib:VarCheck.obj
+ 0003:000002a0       $pdata$InitializeUnicodeCollationSupportWorker 000000000000b980     EfiShellLib:Init.obj
+ 0003:000002ac       $pdata$LibInitializeStrings 000000000000b98c     EfiShellLib:Init.obj
+ 0003:000002b8       $pdata$LibInitializeShellApplication 000000000000b998     EfiShellLib:Init.obj
+ 0003:000002c4       $pdata$ShellGetMap         000000000000b9a4     EfiShellLib:ShellEnvInt.obj
+ 0003:000002d0       $pdata$_SPrint             000000000000b9b0     EfiShellLib:IO.obj
+ 0003:000002dc       $pdata$_PoolCatPrint       000000000000b9bc     EfiShellLib:IO.obj
+ 0003:000002e8       $pdata$SPrint              000000000000b9c8     EfiShellLib:IO.obj
+ 0003:000002f4       $pdata$Print               000000000000b9d4     EfiShellLib:IO.obj
+ 0003:00000300       $pdata$PoolPrint           000000000000b9e0     EfiShellLib:IO.obj
+ 0003:0000030c       $pdata$PrintToken          000000000000b9ec     EfiShellLib:IO.obj
+ 0003:00000318       $pdata$PrintAt             000000000000b9f8     EfiShellLib:IO.obj
+ 0003:00000324       $pdata$_IPrint             000000000000ba04     EfiShellLib:IO.obj
+ 0003:00000330       $pdata$PFLUSH              000000000000ba10     EfiShellLib:IO.obj
+ 0003:0000033c       $pdata$PSETATTR            000000000000ba1c     EfiShellLib:IO.obj
+ 0003:00000348       $pdata$PPUTC               000000000000ba28     EfiShellLib:IO.obj
+ 0003:00000354       $pdata$PITEM               000000000000ba34     EfiShellLib:IO.obj
+ 0003:00000360       $pdata$_Print              000000000000ba40     EfiShellLib:IO.obj
+ 0003:0000036c       $pdata$SetPageBreak        000000000000ba4c     EfiShellLib:IO.obj
+ 0003:00000378       $pdata$IFlushWithPageBreak 000000000000ba58     EfiShellLib:IO.obj
+ 0003:00000384       $pdata$_PoolPrint          000000000000ba64     EfiShellLib:IO.obj
+ 0003:00000390       $pdata$MetaMatch           000000000000ba70     EfiShellLib:Str.obj
+ 0003:0000039c       $pdata$StrDuplicate        000000000000ba7c     EfiShellLib:Str.obj
+ 0003:000003a8       $pdata$AllocatePool        000000000000ba88     EfiShellLib:Mem.obj
+ 0003:000003b4       $pdata$ReallocatePool      000000000000ba94     EfiShellLib:Mem.obj
+ 0003:000003c0       $pdata$AllocateZeroPool    000000000000baa0     EfiShellLib:Mem.obj
+ 0003:000003cc       $pdata$LibGetVariableAndSize 000000000000baac     EfiShellLib:Misc.obj
+ 0003:000003d8       $pdata$GrowBuffer          000000000000bab8     EfiShellLib:Misc.obj
+ 0003:000003e4       $pdata$GuidToString        000000000000bac4     EfiShellLib:Misc.obj
+ 0003:000003f0       $pdata$ValueToString       000000000000bad0     EfiShellLib:Misc.obj
+ 0003:000003fc       $pdata$GetBestLanguage     000000000000badc     EfiShellLib:Misc.obj
+ 0003:00000408       $pdata$LibSelectBestLanguage 000000000000bae8     EfiShellLib:Misc.obj
+ 0003:00000414       $pdata$LocateHiiProtocols  000000000000baf4     EfiShellLib:HiiSupport.obj
+ 0003:00000420       $pdata$PreparePackageList  000000000000bb00     EfiShellLib:HiiSupport.obj
+ 0003:0000042c       $pdata$LibGetString        000000000000bb0c     EfiShellLib:HiiSupport.obj
+ 0003:00000438       $pdata$LibDevicePathToInterface 000000000000bb18     EfiShellLib:DPath.obj
+ 0003:00000444       $pdata$LibLocateHandle     000000000000bb24     EfiShellLib:Handle.obj
+ 0003:00000450       $pdata$LibLocateProtocol   000000000000bb30     EfiShellLib:Handle.obj
+ 0004:00000000       $unwind$InitializeEFIHexEditor 000000000000bb40     HexEdit:main.obj
+ 0004:00000018       $unwind$HexEditGetDefaultFileName 000000000000bb58     HexEdit:main.obj
+ 0004:00000024       $unwind$HMainEditorInit    000000000000bb64     HexEdit:libEditor.obj
+ 0004:00000034       $unwind$HMainStatusBarSetStatusString 000000000000bb74     HexEdit:libStatusBar.obj
+ 0004:00000034       $unwind$_SPrint            000000000000bb74     EfiShellLib:IO.obj
+ 0004:00000034       $unwind$AllocateZeroPool   000000000000bb74     EfiShellLib:Mem.obj
+ 0004:00000034       $unwind$HMainInputBarSetStringSize 000000000000bb74     HexEdit:libInputBar.obj
+ 0004:00000034       $unwind$HMainEditorCleanup 000000000000bb74     HexEdit:libEditor.obj
+ 0004:00000034       $unwind$HMainCommandSelectEnd 000000000000bb74     HexEdit:libMenuBar.obj
+ 0004:00000034       $unwind$HMainInputBarSetPrompt 000000000000bb74     HexEdit:libInputBar.obj
+ 0004:0000003c       $unwind$HMainEditorRefresh 000000000000bb7c     HexEdit:libEditor.obj
+ 0004:00000058       $unwind$HMainEditorHandleMouseInput 000000000000bb98     HexEdit:libEditor.obj
+ 0004:00000068       $unwind$HMainEditorKeyInput 000000000000bba8     HexEdit:libEditor.obj
+ 0004:00000080       $unwind$AllocatePool       000000000000bbc0     EfiShellLib:Mem.obj
+ 0004:00000080       $unwind$HMainEditorBackup  000000000000bbc0     HexEdit:libEditor.obj
+ 0004:00000080       $unwind$HMainCommandSelectStart 000000000000bbc0     HexEdit:libMenuBar.obj
+ 0004:00000080       $unwind$HBufferImageCreateLine 000000000000bbc0     HexEdit:libBufferImage.obj
+ 0004:00000080       $unwind$LocateHiiProtocols 000000000000bbc0     EfiShellLib:HiiSupport.obj
+ 0004:00000080       $unwind$HBufferImageRestorePosition 000000000000bbc0     HexEdit:libBufferImage.obj
+ 0004:00000088       $unwind$HEditorClearLine   000000000000bbc8     HexEdit:libMisc.obj
+ 0004:00000094       $unwind$HStrStr            000000000000bbd4     HexEdit:libMisc.obj
+ 0004:000000b0       $unwind$HBufferImageRead   000000000000bbf0     HexEdit:libBufferImage.obj
+ 0004:000000b0       $unwind$GrowBuffer         000000000000bbf0     EfiShellLib:Misc.obj
+ 0004:000000b0       $unwind$ReallocatePool     000000000000bbf0     EfiShellLib:Mem.obj
+ 0004:000000b0       $unwind$HBufferImageInit   000000000000bbf0     HexEdit:libBufferImage.obj
+ 0004:000000c4       $unwind$HBufferImageAddChar 000000000000bc04     HexEdit:libBufferImage.obj
+ 0004:000000c4       $unwind$HBufferImageDoBackspace 000000000000bc04     HexEdit:libBufferImage.obj
+ 0004:000000c4       $unwind$HMainCommandCut    000000000000bc04     HexEdit:libMenuBar.obj
+ 0004:000000c4       $unwind$PPUTC              000000000000bc04     EfiShellLib:IO.obj
+ 0004:000000c4       $unwind$HBufferImageFreeLines 000000000000bc04     HexEdit:libBufferImage.obj
+ 0004:000000c4       $unwind$PSETATTR           000000000000bc04     EfiShellLib:IO.obj
+ 0004:000000c4       $unwind$LibCheckVarGetFlag 000000000000bc04     EfiShellLib:VarCheck.obj
+ 0004:000000d0       $unwind$HBufferImagePrintLine 000000000000bc10     HexEdit:libBufferImage.obj
+ 0004:000000ec       $unwind$HBufferImageMovePosition 000000000000bc2c     HexEdit:libBufferImage.obj
+ 0004:000000ec       $unwind$HBufferImageIsInSelectedArea 000000000000bc2c     HexEdit:libBufferImage.obj
+ 0004:000000f4       $unwind$HBufferImageRestoreMousePosition 000000000000bc34     HexEdit:libBufferImage.obj
+ 0004:00000110       $unwind$HBufferImageRefresh 000000000000bc50     HexEdit:libBufferImage.obj
+ 0004:00000124       $unwind$_PoolPrint         000000000000bc64     EfiShellLib:IO.obj
+ 0004:00000124       $unwind$HFileImageSetFileName 000000000000bc64     HexEdit:libfileimage.obj
+ 0004:00000124       $unwind$HBufferImageHandleInput 000000000000bc64     HexEdit:libBufferImage.obj
+ 0004:00000124       $unwind$HBufferImageSave   000000000000bc64     HexEdit:libBufferImage.obj
+ 0004:00000124       $unwind$StrDuplicate       000000000000bc64     EfiShellLib:Str.obj
+ 0004:00000124       $unwind$HBufferImageDoDelete 000000000000bc64     HexEdit:libBufferImage.obj
+ 0004:00000124       $unwind$ShellGetMap        000000000000bc64     EfiShellLib:ShellEnvInt.obj
+ 0004:00000134       $unwind$HBufferImageDeleteCharacterFromBuffer 000000000000bc74     HexEdit:libBufferImage.obj
+ 0004:00000150       $unwind$HBufferImageAddCharacterToBuffer 000000000000bc90     HexEdit:libBufferImage.obj
+ 0004:0000016c       $unwind$PITEM              000000000000bcac     EfiShellLib:IO.obj
+ 0004:0000016c       $unwind$HMainInputBarPrintInput 000000000000bcac     HexEdit:libInputBar.obj
+ 0004:0000016c       $unwind$HBufferImageBufferToList 000000000000bcac     HexEdit:libBufferImage.obj
+ 0004:0000016c       $unwind$HDiskImageSetDiskNameOffsetSize 000000000000bcac     HexEdit:libdiskimage.obj
+ 0004:00000184       $unwind$HBufferImageListToBuffer 000000000000bcc4     HexEdit:libBufferImage.obj
+ 0004:00000190       $unwind$HMainTitleBarRefresh 000000000000bcd0     HexEdit:libTitleBar.obj
+ 0004:00000190       $unwind$IFlushWithPageBreak 000000000000bcd0     EfiShellLib:IO.obj
+ 0004:000001a8       $unwind$HMainInputBarRefresh 000000000000bce8     HexEdit:libInputBar.obj
+ 0004:000001b8       $unwind$HMainCommandOpenFile 000000000000bcf8     HexEdit:libMenuBar.obj
+ 0004:000001cc       $unwind$HMainCommandOpenDisk 000000000000bd0c     HexEdit:libMenuBar.obj
+ 0004:000001dc       $unwind$HMainCommandOpenMemory 000000000000bd1c     HexEdit:libMenuBar.obj
+ 0004:000001ec       $unwind$HMainCommandSaveBuffer 000000000000bd2c     HexEdit:libMenuBar.obj
+ 0004:00000204       $unwind$HMainCommandPaste  000000000000bd44     HexEdit:libMenuBar.obj
+ 0004:00000210       $unwind$HMainCommandGoToOffset 000000000000bd50     HexEdit:libMenuBar.obj
+ 0004:00000210       $unwind$PFLUSH             000000000000bd50     EfiShellLib:IO.obj
+ 0004:0000021c       $unwind$HMainCommandExit   000000000000bd5c     HexEdit:libMenuBar.obj
+ 0004:00000228       $unwind$HDiskImageRead     000000000000bd68     HexEdit:libdiskimage.obj
+ 0004:00000244       $unwind$HMemImageSave      000000000000bd84     HexEdit:libMemImage.obj
+ 0004:00000244       $unwind$HDiskImageSave     000000000000bd84     HexEdit:libdiskimage.obj
+ 0004:00000258       $unwind$HMemImageRead      000000000000bd98     HexEdit:libMemImage.obj
+ 0004:00000270       $unwind$HFileImageGetFileInfo 000000000000bdb0     HexEdit:libfileimage.obj
+ 0004:00000280       $unwind$HFileImageRead     000000000000bdc0     HexEdit:libfileimage.obj
+ 0004:00000298       $unwind$HFileImageSave     000000000000bdd8     HexEdit:libfileimage.obj
+ 0004:000002b0       $unwind$LibCheckVariables  000000000000bdf0     EfiShellLib:VarCheck.obj
+ 0004:000002c8       $unwind$InitializeUnicodeCollationSupportWorker 000000000000be08     EfiShellLib:Init.obj
+ 0004:000002dc       $unwind$LibInitializeStrings 000000000000be1c     EfiShellLib:Init.obj
+ 0004:000002e8       $unwind$LibInitializeShellApplication 000000000000be28     EfiShellLib:Init.obj
+ 0004:000002f8       $unwind$_PoolCatPrint      000000000000be38     EfiShellLib:IO.obj
+ 0004:00000300       $unwind$SPrint             000000000000be40     EfiShellLib:IO.obj
+ 0004:0000030c       $unwind$Print              000000000000be4c     EfiShellLib:IO.obj
+ 0004:00000314       $unwind$PoolPrint          000000000000be54     EfiShellLib:IO.obj
+ 0004:0000031c       $unwind$PrintToken         000000000000be5c     EfiShellLib:IO.obj
+ 0004:00000328       $unwind$PrintAt            000000000000be68     EfiShellLib:IO.obj
+ 0004:00000330       $unwind$_IPrint            000000000000be70     EfiShellLib:IO.obj
+ 0004:00000340       $unwind$_Print             000000000000be80     EfiShellLib:IO.obj
+ 0004:00000360       $unwind$SetPageBreak       000000000000bea0     EfiShellLib:IO.obj
+ 0004:00000370       $unwind$MetaMatch          000000000000beb0     EfiShellLib:Str.obj
+ 0004:00000380       $unwind$LibGetVariableAndSize 000000000000bec0     EfiShellLib:Misc.obj
+ 0004:00000390       $unwind$GuidToString       000000000000bed0     EfiShellLib:Misc.obj
+ 0004:000003a8       $unwind$ValueToString      000000000000bee8     EfiShellLib:Misc.obj
+ 0004:000003b0       $unwind$GetBestLanguage    000000000000bef0     EfiShellLib:Misc.obj
+ 0004:000003c0       $unwind$LibSelectBestLanguage 000000000000bf00     EfiShellLib:Misc.obj
+ 0004:000003d0       $unwind$PreparePackageList 000000000000bf10     EfiShellLib:HiiSupport.obj
+ 0004:000003e4       $unwind$LibGetString       000000000000bf24     EfiShellLib:HiiSupport.obj
+ 0004:00000400       $unwind$LibDevicePathToInterface 000000000000bf40     EfiShellLib:DPath.obj
+ 0004:0000040c       $unwind$LibLocateHandle    000000000000bf4c     EfiShellLib:Handle.obj
+ 0004:00000420       $unwind$LibLocateProtocol  000000000000bf60     EfiShellLib:Handle.obj

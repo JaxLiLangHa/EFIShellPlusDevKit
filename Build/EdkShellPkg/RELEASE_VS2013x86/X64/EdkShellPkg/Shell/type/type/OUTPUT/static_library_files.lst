@@ -1,0 +1,10 @@
+e:/edkii/shelldevkit/Build/EdkShellPkg/RELEASE_VS2013x86/X64/EdkShellPkg/Shell/Library/EfiShellLib/OUTPUT/EfiShellLib.lib
+e:/edkii/shelldevkit/Build/EdkShellPkg/RELEASE_VS2013x86/X64/EdkCompatibilityPkg/Foundation/Protocol/EdkProtocolLib/OUTPUT/EdkProtocolLib.lib
+e:/edkii/shelldevkit/Build/EdkShellPkg/RELEASE_VS2013x86/X64/EdkCompatibilityPkg/Foundation/Framework/Protocol/EdkFrameworkProtocolLib/OUTPUT/EdkFrameworkProtocolLib.lib
+e:/edkii/shelldevkit/Build/EdkShellPkg/RELEASE_VS2013x86/X64/EdkCompatibilityPkg/Foundation/Efi/Protocol/EfiProtocolLib/OUTPUT/EfiProtocolLib.lib
+e:/edkii/shelldevkit/Build/EdkShellPkg/RELEASE_VS2013x86/X64/EdkCompatibilityPkg/Foundation/Core/Dxe/ArchProtocol/ArchProtocolLib/OUTPUT/ArchProtocolLib.lib
+e:/edkii/shelldevkit/Build/EdkShellPkg/RELEASE_VS2013x86/X64/EdkCompatibilityPkg/Foundation/Guid/EdkGuidLib/OUTPUT/EdkGuidLib.lib
+e:/edkii/shelldevkit/Build/EdkShellPkg/RELEASE_VS2013x86/X64/EdkCompatibilityPkg/Foundation/Framework/Guid/EdkFrameworkGuidLib/OUTPUT/EdkFrameworkGuidLib.lib
+e:/edkii/shelldevkit/Build/EdkShellPkg/RELEASE_VS2013x86/X64/EdkCompatibilityPkg/Foundation/Efi/Guid/EfiGuidLib/OUTPUT/EfiGuidLib.lib
+e:/edkii/shelldevkit/Build/EdkShellPkg/RELEASE_VS2013x86/X64/EdkCompatibilityPkg/Foundation/Library/CompilerStub/CompilerStubLib/OUTPUT/CompilerStub.lib
+e:/edkii/shelldevkit/Build/EdkShellPkg/RELEASE_VS2013x86/X64/EdkShellPkg/Shell/type/type/OUTPUT/Type.lib

@@ -1,0 +1,229 @@
+ SerMode
+
+ Timestamp is 5bc88615 (Thu Oct 18 21:09:41 2018)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00003163H .text$mn                CODE
+ 0002:00000000 00001458H .data                   DATA
+ 0002:00001460 00000652H .rdata                  DATA
+ 0002:00001ac0 000000c8H .bss                    DATA
+ 0003:00000000 000001b0H .pdata                  DATA
+ 0004:00000000 00000220H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0001:00000210       InitializeSerialMode       00000000000004b0 f   SerMode:sermode.obj
+ 0001:00000794       LibLocateHandle            0000000000000a34 f   EfiShellLib:Handle.obj
+ 0001:00000838       ShellHandleFromIndex       0000000000000ad8 f   EfiShellLib:Handle.obj
+ 0001:000008b8       ShellHandleToIndex         0000000000000b58 f   EfiShellLib:Handle.obj
+ 0001:0000095c       LibLocateProtocol          0000000000000bfc f   EfiShellLib:Handle.obj
+ 0001:00000a00       LibCheckVarGetFlag         0000000000000ca0 f   EfiShellLib:VarCheck.obj
+ 0001:00000a44       iCompareSetFlag            0000000000000ce4 f   EfiShellLib:VarCheck.obj
+ 0001:00000aa0       LibCheckVariables          0000000000000d40 f   EfiShellLib:VarCheck.obj
+ 0001:00000dec       InitializeUnicodeCollationSupportWorker 000000000000108c f   EfiShellLib:Init.obj
+ 0001:00000ee8       LibInitializeStrings       0000000000001188 f   EfiShellLib:Init.obj
+ 0001:00000fd8       LibInitializeShellApplication 0000000000001278 f   EfiShellLib:Init.obj
+ 0001:00001240       LibStubMetaiMatch          00000000000014e0 f   EfiShellLib:Str.obj
+ 0001:0000124c       MetaMatch                  00000000000014ec f   EfiShellLib:Str.obj
+ 0001:00001464       LibStubStriCmp             0000000000001704 f   EfiShellLib:Str.obj
+ 0001:000014e8       LibStubStrUpr              0000000000001788 f   EfiShellLib:Str.obj
+ 0001:00001508       LibStubStrLwr              00000000000017a8 f   EfiShellLib:Str.obj
+ 0001:00001528       StrToUIntegerBase          00000000000017c8 f   EfiShellLib:Str.obj
+ 0001:0000164c       StrToUInteger              00000000000018ec f   EfiShellLib:Str.obj
+ 0001:000017b0       CopyMem                    0000000000001a50 f   EfiShellLib:Mem.obj
+ 0001:000017f4       AllocatePool               0000000000001a94 f   EfiShellLib:Mem.obj
+ 0001:00001828       AllocateZeroPool           0000000000001ac8 f   EfiShellLib:Mem.obj
+ 0001:00001854       LibGetVariableAndSize      0000000000001af4 f   EfiShellLib:Misc.obj
+ 0001:000018e0       GrowBuffer                 0000000000001b80 f   EfiShellLib:Misc.obj
+ 0001:00001980       GuidToString               0000000000001c20 f   EfiShellLib:Misc.obj
+ 0001:00001a90       StatusToString             0000000000001d30 f   EfiShellLib:Misc.obj
+ 0001:00001e30       ValueToString              00000000000020d0 f   EfiShellLib:Misc.obj
+ 0001:00001f18       GetBestLanguage            00000000000021b8 f   EfiShellLib:Misc.obj
+ 0001:00002074       LibSelectBestLanguage      0000000000002314 f   EfiShellLib:Misc.obj
+ 0001:00002108       _SPrint                    00000000000023a8 f   EfiShellLib:IO.obj
+ 0001:00002180       SPrint                     0000000000002420 f   EfiShellLib:IO.obj
+ 0001:000021f4       PrintToken                 0000000000002494 f   EfiShellLib:IO.obj
+ 0001:000022c0       _IPrint                    0000000000002560 f   EfiShellLib:IO.obj
+ 0001:00002374       PFLUSH                     0000000000002614 f   EfiShellLib:IO.obj
+ 0001:00002434       PSETATTR                   00000000000026d4 f   EfiShellLib:IO.obj
+ 0001:00002478       PPUTC                      0000000000002718 f   EfiShellLib:IO.obj
+ 0001:000024f4       PITEM                      0000000000002794 f   EfiShellLib:IO.obj
+ 0001:00002624       _Print                     00000000000028c4 f   EfiShellLib:IO.obj
+ 0001:00002c3c       SetPageBreak               0000000000002edc f   EfiShellLib:IO.obj
+ 0001:00002d50       IFlushWithPageBreak        0000000000002ff0 f   EfiShellLib:IO.obj
+ 0001:00002e94       LocateHiiProtocols         0000000000003134 f   EfiShellLib:HiiSupport.obj
+ 0001:00002ee0       PreparePackageList         0000000000003180 f   EfiShellLib:HiiSupport.obj
+ 0001:00002fd4       LibGetString               0000000000003274 f   EfiShellLib:HiiSupport.obj
+ 0002:00000000       EfiSermodeGuid             0000000000003420     SerMode:sermode.obj
+ 0002:00000010       SermodeCheckList           0000000000003430     SerMode:sermode.obj
+ 0002:00000060       SerModeStrings             0000000000003480     SerMode:AutoGen.obj
+ 0002:00001370       SESGuid                    0000000000004790     EfiShellLib:Init.obj
+ 0002:00001380       PoolAllocationType         00000000000047a0     EfiShellLib:Data.obj
+ 0002:00001388       ShellEnvProtocol           00000000000047a8     EfiShellLib:Data.obj
+ 0002:00001398       LibStubUnicodeInterface    00000000000047b8     EfiShellLib:Data.obj
+ 0002:000013d0       UnicodeInterface           00000000000047f0     EfiShellLib:Data.obj
+ 0002:000013d8       ShellInterfaceProtocol     00000000000047f8     EfiShellLib:Misc.obj
+ 0002:000013e8       gEfiSerialIoProtocolGuid   0000000000004808     EfiProtocolLib:SerialIo.obj
+ 0002:000013f8       gEfiLoadedImageProtocolGuid 0000000000004818     EfiProtocolLib:LoadedImage.obj
+ 0002:00001408       gEfiUnicodeCollation2ProtocolGuid 0000000000004828     EfiProtocolLib:UnicodeCollation2.obj
+ 0002:00001418       gEfiUnicodeCollationProtocolGuid 0000000000004838     EfiProtocolLib:UnicodeCollation.obj
+ 0002:00001428       gEfiHiiStringProtocolGuid  0000000000004848     EfiProtocolLib:HiiString.obj
+ 0002:00001438       gEfiHiiDatabaseProtocolGuid 0000000000004858     EfiProtocolLib:HiiDatabase.obj
+ 0002:00001448       gEfiGlobalVariableGuid     0000000000004868     EfiGuidLib:GlobalVariable.obj
+ 0002:00001460       ??_C@_15GECAHHDM@?$AA?9?$AAb?$AA?$AA@ 0000000000004880     SerMode:sermode.obj
+ 0002:00001468       ??_C@_15FNEHKAED@?$AA?9?$AA?$DP?$AA?$AA@ 0000000000004888     SerMode:sermode.obj
+ 0002:00001470       ??_C@_1BA@GHOECOCL@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AA?$AA@ 0000000000004890     SerMode:sermode.obj
+ 0002:00001480       ??_C@_13JGCMLPCH@?$AA1?$AA?$AA@ 00000000000048a0     SerMode:sermode.obj
+ 0002:00001484       ??_C@_13IEJJBAMJ@?$AA2?$AA?$AA@ 00000000000048a4     SerMode:sermode.obj
+ 0002:00001488       ??_C@_17CJOJBPKA@?$AA1?$AA?4?$AA5?$AA?$AA@ 00000000000048a8     SerMode:sermode.obj
+ 0002:00001490       ??_C@_1BA@LEPJIIOK@?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?$AA@ 00000000000048b0     SerMode:sermode.obj
+ 0002:000014a0       ??_C@_1BA@JHKKDKME@?$AAs?$AAe?$AAr?$AAm?$AAo?$AAd?$AAe?$AA?$AA@ 00000000000048c0     SerMode:sermode.obj
+ 0002:000014b0       ??_C@_19BALNHBBC@?$AAL?$AAa?$AAn?$AAg?$AA?$AA@ 00000000000048d0     EfiShellLib:Misc.obj
+ 0002:000014c0       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg?$AA?$AA@ 00000000000048e0     EfiShellLib:Misc.obj
+ 0002:000014dc       ??_C@_15GANGMFKL@?$AA?$CF?$AAs?$AA?$AA@ 00000000000048fc     EfiShellLib:Misc.obj
+ 0002:000014f0       ??_C@_1GC@MIJCAPDC@?$AA?$CF?$AA0?$AA8?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx@ 0000000000004910     EfiShellLib:Misc.obj
+ 0002:00001558       ??_C@_1BA@JFDCMKFN@?$AAS?$AAu?$AAc?$AAc?$AAe?$AAs?$AAs?$AA?$AA@ 0000000000004978     EfiShellLib:Misc.obj
+ 0002:00001568       ??_C@_1BG@IPPBEJLN@?$AAL?$AAo?$AAa?$AAd?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 0000000000004988     EfiShellLib:Misc.obj
+ 0002:00001580       ??_C@_1CE@FAJJAJHO@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAP?$AAa?$AAr?$AAa?$AAm?$AAe?$AAt?$AAe?$AAr?$AA?$AA@ 00000000000049a0     EfiShellLib:Misc.obj
+ 0002:000015a8       ??_C@_1BI@HACEKCKB@?$AAU?$AAn?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAe?$AAd?$AA?$AA@ 00000000000049c8     EfiShellLib:Misc.obj
+ 0002:000015c0       ??_C@_1CA@MKNIKBGN@?$AAB?$AAa?$AAd?$AA?5?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 00000000000049e0     EfiShellLib:Misc.obj
+ 0002:000015e0       ??_C@_1CC@GADLJCKI@?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAT?$AAo?$AAo?$AA?5?$AAS?$AAm?$AAa?$AAl?$AAl?$AA?$AA@ 0000000000004a00     EfiShellLib:Misc.obj
+ 0002:00001608       ??_C@_1BE@HFDAGNKF@?$AAN?$AAo?$AAt?$AA?5?$AAR?$AAe?$AAa?$AAd?$AAy?$AA?$AA@ 0000000000004a28     EfiShellLib:Misc.obj
+ 0002:00001620       ??_C@_1BK@MPLHBIOA@?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 0000000000004a40     EfiShellLib:Misc.obj
+ 0002:00001640       ??_C@_1CA@PAGBHICH@?$AAW?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAP?$AAr?$AAo?$AAt?$AAe?$AAc?$AAt?$AAe?$AAd?$AA?$AA@ 0000000000004a60     EfiShellLib:Misc.obj
+ 0002:00001660       ??_C@_1CC@JDEEHPBA@?$AAO?$AAu?$AAt?$AA?5?$AAo?$AAf?$AA?5?$AAR?$AAe?$AAs?$AAo?$AAu?$AAr?$AAc?$AAe?$AAs?$AA?$AA@ 0000000000004a80     EfiShellLib:Misc.obj
+ 0002:00001688       ??_C@_1CC@IIFGLPAC@?$AAV?$AAo?$AAl?$AAu?$AAm?$AAe?$AA?5?$AAC?$AAo?$AAr?$AAr?$AAu?$AAp?$AAt?$AAe?$AAd?$AA?$AA@ 0000000000004aa8     EfiShellLib:Misc.obj
+ 0002:000016b0       ??_C@_1BI@KDMJOJPB@?$AAV?$AAo?$AAl?$AAu?$AAm?$AAe?$AA?5?$AAF?$AAu?$AAl?$AAl?$AA?$AA@ 0000000000004ad0     EfiShellLib:Misc.obj
+ 0002:000016c8       ??_C@_1BC@CAEJNJKB@?$AAN?$AAo?$AA?5?$AAM?$AAe?$AAd?$AAi?$AAa?$AA?$AA@ 0000000000004ae8     EfiShellLib:Misc.obj
+ 0002:000016e0       ??_C@_1BM@CGJAEDJP@?$AAM?$AAe?$AAd?$AAi?$AAa?$AA?5?$AAC?$AAh?$AAa?$AAn?$AAg?$AAe?$AAd?$AA?$AA@ 0000000000004b00     EfiShellLib:Misc.obj
+ 0002:00001700       ??_C@_1BE@JGBFLIBK@?$AAN?$AAo?$AAt?$AA?5?$AAF?$AAo?$AAu?$AAn?$AAd?$AA?$AA@ 0000000000004b20     EfiShellLib:Misc.obj
+ 0002:00001718       ??_C@_1BM@HDPINFLL@?$AAA?$AAc?$AAc?$AAe?$AAs?$AAs?$AA?5?$AAD?$AAe?$AAn?$AAi?$AAe?$AAd?$AA?$AA@ 0000000000004b38     EfiShellLib:Misc.obj
+ 0002:00001738       ??_C@_1BI@JIAAMNOB@?$AAN?$AAo?$AA?5?$AAR?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?$AA@ 0000000000004b58     EfiShellLib:Misc.obj
+ 0002:00001750       ??_C@_1BG@OHLJONME@?$AAN?$AAo?$AA?5?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg?$AA?$AA@ 0000000000004b70     EfiShellLib:Misc.obj
+ 0002:00001768       ??_C@_1BC@GINMNENH@?$AAT?$AAi?$AAm?$AAe?$AA?5?$AAO?$AAu?$AAt?$AA?$AA@ 0000000000004b88     EfiShellLib:Misc.obj
+ 0002:00001780       ??_C@_1BI@MNIOFEEM@?$AAN?$AAo?$AAt?$AA?5?$AAS?$AAt?$AAa?$AAr?$AAt?$AAe?$AAd?$AA?$AA@ 0000000000004ba0     EfiShellLib:Misc.obj
+ 0002:00001798       ??_C@_1CA@CNMNDJCM@?$AAA?$AAl?$AAr?$AAe?$AAa?$AAd?$AAy?$AA?5?$AAS?$AAt?$AAa?$AAr?$AAt?$AAe?$AAd?$AA?$AA@ 0000000000004bb8     EfiShellLib:Misc.obj
+ 0002:000017b8       ??_C@_1BA@JCPMFPEO@?$AAA?$AAb?$AAo?$AAr?$AAt?$AAe?$AAd?$AA?$AA@ 0000000000004bd8     EfiShellLib:Misc.obj
+ 0002:000017c8       ??_C@_1BG@GJCEBLMD@?$AAI?$AAC?$AAM?$AAP?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 0000000000004be8     EfiShellLib:Misc.obj
+ 0002:000017e0       ??_C@_1BG@MPDDBEKI@?$AAT?$AAF?$AAT?$AAP?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 0000000000004c00     EfiShellLib:Misc.obj
+ 0002:000017f8       ??_C@_1BO@MGICIKC@?$AAP?$AAr?$AAo?$AAt?$AAo?$AAc?$AAo?$AAl?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 0000000000004c18     EfiShellLib:Misc.obj
+ 0002:00001818       ??_C@_1CM@OIKNIHHI@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?5?$AAG?$AAl?$AAy?$AAp?$AAh?$AA?$AA@ 0000000000004c38     EfiShellLib:Misc.obj
+ 0002:00001848       ??_C@_1CO@MFHEGPPN@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAD?$AAe?$AAl?$AAe?$AAt?$AAe?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?$AA@ 0000000000004c68     EfiShellLib:Misc.obj
+ 0002:00001878       ??_C@_1CM@FKHEOEHO@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAW?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?$AA@ 0000000000004c98     EfiShellLib:Misc.obj
+ 0002:000018a8       ??_C@_1DC@LAAGMHGB@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAT?$AAo?$AAo?$AA?5?$AAS?$AAm?$AAa?$AAl?$AAl?$AA?$AA@ 0000000000004cc8     EfiShellLib:Misc.obj
+ 0002:000018e0       ??_C@_1CK@CPNEFGBF@?$AAI?$AAn?$AAc?$AAo?$AAm?$AAp?$AAa?$AAt?$AAi?$AAb?$AAl?$AAe?$AA?5?$AAV?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?$AA@ 0000000000004d00     EfiShellLib:Misc.obj
+ 0002:00001910       ??_C@_1CG@CONBDECJ@?$AAS?$AAe?$AAc?$AAu?$AAr?$AAi?$AAt?$AAy?$AA?5?$AAV?$AAi?$AAo?$AAl?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 0000000000004d30     EfiShellLib:Misc.obj
+ 0002:00001938       ??_C@_1BE@LNMOCCLF@?$AAC?$AAR?$AAC?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 0000000000004d58     EfiShellLib:Misc.obj
+ 0002:00001950       ??_C@_1CE@OCFFKMII@?$AAN?$AAo?$AAt?$AA?5?$AAA?$AAv?$AAa?$AAi?$AAl?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAY?$AAe?$AAt?$AA?$AA@ 0000000000004d70     EfiShellLib:Misc.obj
+ 0002:00001978       ??_C@_1BK@BJJGPOPI@?$AAU?$AAn?$AAl?$AAo?$AAa?$AAd?$AA?5?$AAI?$AAm?$AAa?$AAg?$AAe?$AA?$AA@ 0000000000004d98     EfiShellLib:Misc.obj
+ 0002:00001998       ??_C@_1DM@HHKGEKOD@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAR?$AAe?$AAt?$AAu?$AAr?$AAn?$AA?5?$AAF?$AAr?$AAo?$AAm?$AA?5?$AAL?$AAo?$AAn?$AAg?$AA?5?$AAJ?$AAu?$AAm?$AAp?$AA?$AA@ 0000000000004db8     EfiShellLib:Misc.obj
+ 0002:000019d4       ??_C@_15BHOFONJE@?$AA?$CF?$AAX?$AA?$AA@ 0000000000004df4     EfiShellLib:Misc.obj
+ 0002:000019e0       ??_C@_1DI@JHANLOAN@?$AA?$CF?$AA0?$AA2?$AAd?$AA?1?$AA?$CF?$AA0?$AA2?$AAd?$AA?1?$AA?$CF?$AA0?$AA2?$AAd?$AA?5?$AA?5?$AA?$CF?$AA0?$AA2?$AAd?$AA?3?$AA?$CF?$AA0?$AA2?$AAd?$AA?$CF?$AAc?$AA?$AA@ 0000000000004e00     EfiShellLib:Misc.obj
+ 0002:00001a18       ??_C@_00CNPNBAHC@?$AA@     0000000000004e38     EfiShellLib:Misc.obj
+ 0002:00001a1c       ??_C@_03LKLGDMJI@eng?$AA@  0000000000004e3c     EfiShellLib:Misc.obj
+ 0002:00001a20       ??_C@_05JJLPJMLG@en?9US?$AA@ 0000000000004e40     EfiShellLib:Misc.obj
+ 0002:00001a28       ca                         0000000000004e48     EfiShellLib:Misc.obj
+ 0002:00001a40       ??_C@_06OJHGLDPL@?$CInull?$CJ?$AA@ 0000000000004e60     EfiShellLib:IO.obj
+ 0002:00001a48       ??_C@_1O@CEDCILHN@?$AA?$CI?$AAn?$AAu?$AAl?$AAl?$AA?$CJ?$AA?$AA@ 0000000000004e68     EfiShellLib:IO.obj
+ 0002:00001a60       ??_C@_1EM@PFLICCFE@?$AAP?$AAr?$AAe?$AAs?$AAs?$AA?5?$AAE?$AAN?$AAT?$AAE?$AAR?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAo?$AAn?$AAt?$AAi?$AAn?$AAu?$AAe?$AA?0?$AA?5?$AA?8?$AAq?$AA?8?$AA?5?$AAt?$AAo?$AA?5@ 0000000000004e80     EfiShellLib:IO.obj
+ 0002:00001aac       ??_C@_15JNBOKNOG@?$AA?$AN?$AA?6?$AA?$AA@ 0000000000004ecc     EfiShellLib:IO.obj
+ 0002:00001ac0       HiiInitialized             0000000000004ee0     EfiShellLib:Init.obj
+ 0002:00001ac8       HiiLibHandle               0000000000004ee8     EfiShellLib:Init.obj
+ 0002:00001ad0       NumStrings                 0000000000004ef0     EfiShellLib:Init.obj
+ 0002:00001ad8       ShellLibInitialized        0000000000004ef8     EfiShellLib:Data.obj
+ 0002:00001ae8       gLibHiiDatabase            0000000000004f08     EfiShellLib:HiiSupport.obj
+ 0002:00001af0       gLibHiiString              0000000000004f10     EfiShellLib:HiiSupport.obj
+ 0002:00001af8       mHiiProtocolsInitialized   0000000000004f18     EfiShellLib:HiiSupport.obj
+ 0002:00001b00       RT                         0000000000004f20     <common>
+ 0002:00001b20       mPrintMode                 0000000000004f40     <common>
+ 0002:00001b58       ST                         0000000000004f78     <common>
+ 0002:00001b60       SE                         0000000000004f80     <common>
+ 0002:00001b68       SE2                        0000000000004f88     <common>
+ 0002:00001b70       BS                         0000000000004f90     <common>
+ 0002:00001b78       SI                         0000000000004f98     <common>
+ 0002:00001b80       HiiHandle                  0000000000004fa0     <common>
+
+ entry point at        0001:00000210
+
+ Static symbols
+
+ 0001:00000000       iDisplaySettings           00000000000002a0 f   SerMode:sermode.obj
+ 0002:00001a30       Hex                        0000000000004e50     EfiShellLib:Misc.obj
+ 0002:00001ae0       mShellEnv                  0000000000004f00     EfiShellLib:Misc.obj
+ 0003:00000000       $pdata$iDisplaySettings    0000000000004fc0     SerMode:sermode.obj
+ 0003:0000000c       $pdata$InitializeSerialMode 0000000000004fcc     SerMode:sermode.obj
+ 0003:00000018       $pdata$LibLocateHandle     0000000000004fd8     EfiShellLib:Handle.obj
+ 0003:00000024       $pdata$ShellHandleFromIndex 0000000000004fe4     EfiShellLib:Handle.obj
+ 0003:00000030       $pdata$ShellHandleToIndex  0000000000004ff0     EfiShellLib:Handle.obj
+ 0003:0000003c       $pdata$LibLocateProtocol   0000000000004ffc     EfiShellLib:Handle.obj
+ 0003:00000048       $pdata$LibCheckVarGetFlag  0000000000005008     EfiShellLib:VarCheck.obj
+ 0003:00000054       $pdata$LibCheckVariables   0000000000005014     EfiShellLib:VarCheck.obj
+ 0003:00000060       $pdata$InitializeUnicodeCollationSupportWorker 0000000000005020     EfiShellLib:Init.obj
+ 0003:0000006c       $pdata$LibInitializeStrings 000000000000502c     EfiShellLib:Init.obj
+ 0003:00000078       $pdata$LibInitializeShellApplication 0000000000005038     EfiShellLib:Init.obj
+ 0003:00000084       $pdata$MetaMatch           0000000000005044     EfiShellLib:Str.obj
+ 0003:00000090       $pdata$StrToUIntegerBase   0000000000005050     EfiShellLib:Str.obj
+ 0003:0000009c       $pdata$StrToUInteger       000000000000505c     EfiShellLib:Str.obj
+ 0003:000000a8       $pdata$AllocatePool        0000000000005068     EfiShellLib:Mem.obj
+ 0003:000000b4       $pdata$AllocateZeroPool    0000000000005074     EfiShellLib:Mem.obj
+ 0003:000000c0       $pdata$LibGetVariableAndSize 0000000000005080     EfiShellLib:Misc.obj
+ 0003:000000cc       $pdata$GrowBuffer          000000000000508c     EfiShellLib:Misc.obj
+ 0003:000000d8       $pdata$GuidToString        0000000000005098     EfiShellLib:Misc.obj
+ 0003:000000e4       $pdata$ValueToString       00000000000050a4     EfiShellLib:Misc.obj
+ 0003:000000f0       $pdata$GetBestLanguage     00000000000050b0     EfiShellLib:Misc.obj
+ 0003:000000fc       $pdata$LibSelectBestLanguage 00000000000050bc     EfiShellLib:Misc.obj
+ 0003:00000108       $pdata$_SPrint             00000000000050c8     EfiShellLib:IO.obj
+ 0003:00000114       $pdata$SPrint              00000000000050d4     EfiShellLib:IO.obj
+ 0003:00000120       $pdata$PrintToken          00000000000050e0     EfiShellLib:IO.obj
+ 0003:0000012c       $pdata$_IPrint             00000000000050ec     EfiShellLib:IO.obj
+ 0003:00000138       $pdata$PFLUSH              00000000000050f8     EfiShellLib:IO.obj
+ 0003:00000144       $pdata$PSETATTR            0000000000005104     EfiShellLib:IO.obj
+ 0003:00000150       $pdata$PPUTC               0000000000005110     EfiShellLib:IO.obj
+ 0003:0000015c       $pdata$PITEM               000000000000511c     EfiShellLib:IO.obj
+ 0003:00000168       $pdata$_Print              0000000000005128     EfiShellLib:IO.obj
+ 0003:00000174       $pdata$SetPageBreak        0000000000005134     EfiShellLib:IO.obj
+ 0003:00000180       $pdata$IFlushWithPageBreak 0000000000005140     EfiShellLib:IO.obj
+ 0003:0000018c       $pdata$LocateHiiProtocols  000000000000514c     EfiShellLib:HiiSupport.obj
+ 0003:00000198       $pdata$PreparePackageList  0000000000005158     EfiShellLib:HiiSupport.obj
+ 0003:000001a4       $pdata$LibGetString        0000000000005164     EfiShellLib:HiiSupport.obj
+ 0004:00000000       $unwind$iDisplaySettings   0000000000005180     SerMode:sermode.obj
+ 0004:00000014       $unwind$InitializeSerialMode 0000000000005194     SerMode:sermode.obj
+ 0004:00000030       $unwind$LibLocateHandle    00000000000051b0     EfiShellLib:Handle.obj
+ 0004:00000044       $unwind$PFLUSH             00000000000051c4     EfiShellLib:IO.obj
+ 0004:00000044       $unwind$ShellHandleFromIndex 00000000000051c4     EfiShellLib:Handle.obj
+ 0004:00000050       $unwind$ShellHandleToIndex 00000000000051d0     EfiShellLib:Handle.obj
+ 0004:00000064       $unwind$LibLocateProtocol  00000000000051e4     EfiShellLib:Handle.obj
+ 0004:00000078       $unwind$PPUTC              00000000000051f8     EfiShellLib:IO.obj
+ 0004:00000078       $unwind$PSETATTR           00000000000051f8     EfiShellLib:IO.obj
+ 0004:00000078       $unwind$LibCheckVarGetFlag 00000000000051f8     EfiShellLib:VarCheck.obj
+ 0004:00000084       $unwind$LibCheckVariables  0000000000005204     EfiShellLib:VarCheck.obj
+ 0004:0000009c       $unwind$InitializeUnicodeCollationSupportWorker 000000000000521c     EfiShellLib:Init.obj
+ 0004:000000b0       $unwind$LibInitializeStrings 0000000000005230     EfiShellLib:Init.obj
+ 0004:000000bc       $unwind$LibInitializeShellApplication 000000000000523c     EfiShellLib:Init.obj
+ 0004:000000cc       $unwind$MetaMatch          000000000000524c     EfiShellLib:Str.obj
+ 0004:000000dc       $unwind$StrToUIntegerBase  000000000000525c     EfiShellLib:Str.obj
+ 0004:000000e8       $unwind$StrToUInteger      0000000000005268     EfiShellLib:Str.obj
+ 0004:000000f8       $unwind$AllocatePool       0000000000005278     EfiShellLib:Mem.obj
+ 0004:000000f8       $unwind$LocateHiiProtocols 0000000000005278     EfiShellLib:HiiSupport.obj
+ 0004:00000100       $unwind$_SPrint            0000000000005280     EfiShellLib:IO.obj
+ 0004:00000100       $unwind$AllocateZeroPool   0000000000005280     EfiShellLib:Mem.obj
+ 0004:00000108       $unwind$LibGetVariableAndSize 0000000000005288     EfiShellLib:Misc.obj
+ 0004:00000118       $unwind$GrowBuffer         0000000000005298     EfiShellLib:Misc.obj
+ 0004:0000012c       $unwind$GuidToString       00000000000052ac     EfiShellLib:Misc.obj
+ 0004:00000144       $unwind$ValueToString      00000000000052c4     EfiShellLib:Misc.obj
+ 0004:0000014c       $unwind$GetBestLanguage    00000000000052cc     EfiShellLib:Misc.obj
+ 0004:0000015c       $unwind$LibSelectBestLanguage 00000000000052dc     EfiShellLib:Misc.obj
+ 0004:0000016c       $unwind$SPrint             00000000000052ec     EfiShellLib:IO.obj
+ 0004:00000178       $unwind$PrintToken         00000000000052f8     EfiShellLib:IO.obj
+ 0004:00000184       $unwind$_IPrint            0000000000005304     EfiShellLib:IO.obj
+ 0004:00000190       $unwind$PITEM              0000000000005310     EfiShellLib:IO.obj
+ 0004:000001a8       $unwind$_Print             0000000000005328     EfiShellLib:IO.obj
+ 0004:000001c8       $unwind$SetPageBreak       0000000000005348     EfiShellLib:IO.obj
+ 0004:000001d8       $unwind$IFlushWithPageBreak 0000000000005358     EfiShellLib:IO.obj
+ 0004:000001f0       $unwind$PreparePackageList 0000000000005370     EfiShellLib:HiiSupport.obj
+ 0004:00000204       $unwind$LibGetString       0000000000005384     EfiShellLib:HiiSupport.obj

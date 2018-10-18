@@ -1,0 +1,76 @@
+#/*++
+#
+# Copyright (c) 2005 - 2011 Intel Corporation                                                         
+# All rights reserved. This program and the accompanying materials                          
+# are licensed and made available under the terms and conditions of the BSD License         
+# which accompanies this distribution. The full text of the license may be found at         
+# http://opensource.org/licenses/bsd-license.php                                            
+#                                                                                           
+# THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,                     
+# WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.             
+# 
+#  Module Name:
+#
+#    Smbiosview.inf
+#
+#  Abstract:
+#
+#    Component description file for Smbiosview utility.
+#
+#--*/
+
+[defines]
+BASE_NAME            = SmbiosView
+FILE_GUID            = 0F4C0280-B581-4940-AF19-D0CB5559CC95
+COMPONENT_TYPE       = APPLICATION
+
+[sources.common]
+  ..\ShCommonStrings.uni
+  SmBiosViewStrings.uni
+  QueryTable.c
+  QueryTable.h
+  EventLogInfo.c
+  EventLogInfo.h
+  PrintInfo.c
+  PrintInfo.h
+  LibSmbiosView.c
+  LibSmbiosView.h
+  smbiosview.c
+  smbiosview.h
+  smbios.c
+  Smbios.h
+  LibSmbios.h
+
+[includes.common]
+  .
+  ..\Inc
+  ..\Library
+  $(EDK_SOURCE)\Foundation
+  $(EDK_SOURCE)\Foundation\Include
+  $(EDK_SOURCE)\Foundation\Include\IndustryStandard
+  $(EDK_SOURCE)\Foundation\Efi
+  $(EDK_SOURCE)\Foundation\Efi\Include
+  $(EDK_SOURCE)\Foundation\FrameWork
+  $(EDK_SOURCE)\Foundation\FrameWork\Include
+  $(EDK_SOURCE)\Foundation\Core\Dxe
+  $(DEST_DIR)\
+  $(EFI_SOURCE)\Application\Shell\Inc
+  $(EFI_SOURCE)\Application\Shell\Library
+
+[libraries.common]  
+  EfiShellLib
+  EdkProtocolLib
+  EdkFrameworkProtocolLib
+  EfiProtocolLib
+  ArchProtocolLib
+  EdkGuidLib
+  EdkFrameworkGuidLib
+  EfiGuidLib
+
+
+[nmake.common]
+  IMAGE_ENTRY_POINT=InitializeSmbiosViewApplication
+  L_PROJ_FLAGS=/align:4096
+  C_STD_FLAGS = $(C_STD_FLAGS) /DSTRING_ARRAY_NAME=$(BASE_NAME)Strings 
+  C_STD_FLAGS = $(C_STD_FLAGS) /DSTRING_DEFINES_FILE=\"$(BASE_NAME)StrDefs.h\"
+  C_STD_FLAGS = $(C_STD_FLAGS) /DEFI_BOOTSHELL
