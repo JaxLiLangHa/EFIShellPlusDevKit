@@ -1,5 +1,6 @@
 @echo off
 set WORKSPACE=%CD%
+set IASL_PREFIX=%WORKSPACE%\Tools\
 set NASM_PREFIX=%WORKSPACE%\Tools\
 set PYTHON_HOME=C:\Python27
 set EDK_TOOLS_PATH=%WORKSPACE%\BaseTools

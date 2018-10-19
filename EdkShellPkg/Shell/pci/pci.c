@@ -695,7 +695,7 @@ Returns:
 
                 if (PrintTitle) {
                   PrintToken (STRING_TOKEN (STR_PCI2_SEG_BUS), HiiHandle);
-                  Print (L"  [----:----] ---:---.----\n");
+                  //Print (L"  [----:----] ---:---.----\n");
                   PrintTitle = FALSE;
                 }
 
@@ -882,7 +882,7 @@ Returns:
     (UINTN) Device,
     (UINTN) Func
     );  
-  Print(L"            00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E\n");
+  Print(L"            00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F\n");
   //
   // Dump standard header of configuration space
   //
