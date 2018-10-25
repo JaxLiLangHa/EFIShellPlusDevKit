@@ -257,4 +257,9 @@ LibGetExitCode (
   VOID
   );
 
+UINT16
+ChipsetCheck (
+  VOID
+  );
+
 #endif

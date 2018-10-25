@@ -2545,3 +2545,43 @@ Returns:
 
   return Status;
 }
+
+//***************************************************************************
+//
+// Name: ChipsetCheck
+//
+//***************************************************************************
+UINT16 
+ChipsetCheck (
+  VOID
+  )
+  /*++
+
+Routine Description:
+
+  This function gets ChipsetID by Lpc. 
+
+Arguments:
+
+    VOID
+
+Returns:
+
+  ChipsetID
+
+--*/
+{
+	static UINT16 chipSetVid = 0;
+	if (chipSetVid != 0) {
+    return chipSetVid;
+  }
+
+
+	chipSetVid = PciRead16(0x80000000); //read Host-Bridge VenderID
+
+  if ((chipSetVid != 0x8086) && (chipSetVid != 0x1022) && (chipSetVid != 0x1002) && (chipSetVid != 0x1D94)) {
+    Print (L"Unknown chipset (%04X)!\n", chipSetVid);
+    chipSetVid = 0xFFFF;
+  }
+	return chipSetVid;
+}
