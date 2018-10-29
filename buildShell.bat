@@ -10,7 +10,7 @@ call edksetup.bat
 set ACTIVE_PLATFORM=EdkShellPkg\EdkShellPkg.dsc
 set TARGET=RELEASE
 set TARGET_ARCH=X64
-set TOOL_CHAIN_TAG=VS2013x86
+set TOOL_CHAIN_TAG=VS2015x86
 
 @echo on
 @ call build -p %ACTIVE_PLATFORM% -a %TARGET_ARCH% -b %TARGET% -t %TOOL_CHAIN_TAG%
