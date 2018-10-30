@@ -270,6 +270,9 @@ COMPONENT_TYPE       = APPLICATION
   smbiosview\smbiosview.c
   smbiosview\smbios.c
   
+  smn\SmnStrings.uni
+  smn\smn.c
+  
   stall\stallStrings.uni
   stall\stall.c
   

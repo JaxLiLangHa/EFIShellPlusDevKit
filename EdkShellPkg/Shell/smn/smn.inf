@@ -1,0 +1,69 @@
+#/*++
+#  Module Name:
+#
+#    smn.inf
+#
+#  Abstract:
+#
+#    Component description file for building an application for the shell
+#    command guid.
+#
+#  Notes:
+#    BASE_NAME   - names the output file (guid.efi here)
+#    FILE_GUID   - required by the build tool, but not used anywhere for this
+#    BUILD_TYPE  - tells the build process to use the 
+#                  [build.$(PROCESSOR).$(BUILD_TYPE)] section of the DSC file
+#                  to build it. Make sure the DSC file has this section.
+#    FV          - define as NULL to indicate to the build tools that the
+#                  final build target does not go into any firmware volume.
+#
+#  Use of this file requires building in and linking the Shell library.
+#  You must also add it to the DSC file somewhere after the shell has been 
+#  built.
+#
+--*/
+
+[defines]
+BASE_NAME            = Smn
+FILE_GUID            = f9258782-0d42-4d2d-93a3-484b948f9e4c
+COMPONENT_TYPE       = APPLICATION
+
+
+[sources.common]
+  ..\ShCommonStrings.uni
+  SmnStrings.uni
+  smn.c
+  smn.h
+
+[includes.common]
+  .
+  ..\Inc
+  ..\Library
+  ..\Library\BasicFunctionLib
+  $(EDK_SOURCE)\Foundation
+  $(EDK_SOURCE)\Foundation\Include
+  $(EDK_SOURCE)\Foundation\Include\IndustryStandard
+  $(EDK_SOURCE)\Foundation\Efi
+  $(EDK_SOURCE)\Foundation\Efi\Include
+  $(EDK_SOURCE)\Foundation\FrameWork
+  $(EDK_SOURCE)\Foundation\FrameWork\Include
+  $(EDK_SOURCE)\Foundation\Core\Dxe
+  $(DEST_DIR)\
+
+[libraries.common]  
+  EfiShellLib
+  BasicFunctionLib
+  EdkProtocolLib
+  EdkFrameworkProtocolLib
+  EfiProtocolLib
+  ArchProtocolLib
+  EdkGuidLib
+  EdkFrameworkGuidLib
+  EfiGuidLib
+
+
+[nmake.common]
+  IMAGE_ENTRY_POINT=InitializeSmn
+  C_STD_FLAGS = $(C_STD_FLAGS) /DSTRING_ARRAY_NAME=$(BASE_NAME)Strings 
+  C_STD_FLAGS = $(C_STD_FLAGS) /DSTRING_DEFINES_FILE=\"$(BASE_NAME)StrDefs.h\"
+  C_STD_FLAGS = $(C_STD_FLAGS) /DEFI_BOOTSHELL

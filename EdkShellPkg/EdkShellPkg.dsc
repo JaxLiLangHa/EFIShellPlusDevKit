@@ -179,6 +179,7 @@ DEFINE GCC_MACRO                 = -DEFI_SPECIFICATION_VERSION=0x0002000A -DPI_S
   $(EDK_SHELL_DIR)/rm/rm.inf
   $(EDK_SHELL_DIR)/sermode/sermode.inf
   $(EDK_SHELL_DIR)/SmbiosView/Smbiosview.inf
+  $(EDK_SHELL_DIR)/smn/smn.inf
   $(EDK_SHELL_DIR)/stall/stall.inf
   $(EDK_SHELL_DIR)/TelnetMgmt/TelnetMgmt.inf
   $(EDK_SHELL_DIR)/time/time.inf
