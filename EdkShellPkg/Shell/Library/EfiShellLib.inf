@@ -61,6 +61,7 @@ COMPONENT_TYPE  = LIBRARY
 [sources.x64]
   ipf\math.c
   ia32\initplat.c
+  X64\BaseX64.asm
 
 [includes.common]
   .

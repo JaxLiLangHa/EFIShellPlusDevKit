@@ -357,4 +357,36 @@ LibGetControllerName (
   OUT CHAR16      **ControllerName
   );
 
+UINT8
+EfiIoRead8 (
+  IN UINTN Port
+  );
+
+UINT16
+EfiIoRead16 (
+  IN UINTN Port
+  );
+
+UINT32
+EfiIoRead32 (
+  IN UINTN Port
+  );
+
+UINT8
+EfiIoWrite8 (
+  IN UINTN Port,
+  IN UINT8 Value
+  );
+
+UINT16
+EfiIoWrite16 (
+  IN UINTN  Port,
+  IN UINT16 Value
+  );
+
+UINT32
+EfiIoWrite32 (
+  IN UINTN  Port,
+  IN UINT32 Value
+  );
 #endif
