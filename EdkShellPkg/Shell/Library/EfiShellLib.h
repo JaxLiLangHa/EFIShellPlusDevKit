@@ -357,6 +357,9 @@ LibGetControllerName (
   OUT CHAR16      **ControllerName
   );
 
+//
+// IO Functions
+//
 UINT8
 EfiIoRead8 (
   IN UINTN Port

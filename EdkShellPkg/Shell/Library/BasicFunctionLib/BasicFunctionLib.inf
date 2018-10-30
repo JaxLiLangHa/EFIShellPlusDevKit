@@ -1,0 +1,41 @@
+#/*++         
+# 
+#  Module Name:
+#
+#    BasicFunction.inf
+#
+#  Abstract:
+#
+#    Component description file for the EFI utility library.
+#
+#--*/
+
+[defines]
+BASE_NAME       = BasicFunctionLib
+COMPONENT_TYPE  = LIBRARY
+
+[sources.common]
+  BasicFunctionLib.c
+
+[includes.common]
+  .
+  ..\
+  ..\..\inc
+  $(EDK_SOURCE)\Foundation
+  $(EDK_SOURCE)\Foundation\Include
+  $(EDK_SOURCE)\Foundation\Efi
+  $(EDK_SOURCE)\Foundation\Efi\Include
+  $(EDK_SOURCE)\Foundation\FrameWork
+  $(EDK_SOURCE)\Foundation\FrameWork\Include
+  $(EDK_SOURCE)\Foundation\Include\IndustryStandard
+  $(EDK_SOURCE)\Foundation\Core\Dxe
+
+[libraries.common]
+  EfiShellLib
+  EdkFrameworkProtocolLib
+  EdkProtocolLib
+  EfiProtocolLib
+  EfiGuidLib
+  EdkGuidLib
+
+[nmake.common]

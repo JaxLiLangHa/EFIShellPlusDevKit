@@ -44,6 +44,7 @@ COMPONENT_TYPE       = APPLICATION
   Library\Perf.c
   Library\VarCheck.c
   Library\HiiSupport.c
+  Library\BasicFunctionLib\BasicFunctionLib.c
 
   newshell\NshellStrings.uni
   newshell\init.c
@@ -299,12 +300,14 @@ COMPONENT_TYPE       = APPLICATION
   ver\ia32\ver32.c
   Library\ipf\math.c
   Library\ia32\initplat.c
+  Library\X64\BaseX64.asm
 
 [includes.common]
   .
   .\Inc
   .\ver
   .\Library
+  .\Library\BasicFunctionLib
   $(EDK_SOURCE)\Foundation
   $(EDK_SOURCE)\Foundation\Include
   $(EDK_SOURCE)\Foundation\Include\IndustryStandard

@@ -78,6 +78,7 @@ DEFINE GCC_MACRO                 = -DEFI_SPECIFICATION_VERSION=0x0002000A -DPI_S
   # Shell Library
   #
   $(EDK_SHELL_DIR)/Library/EfiShellLib.inf
+  $(EDK_SHELL_DIR)/Library/BasicFunctionLib/BasicFunctionLib.inf
 
 [Libraries.IA32, Libraries.X64]
   EdkCompatibilityPkg/Foundation/Library/CompilerStub/CompilerStubLib.inf
@@ -187,7 +188,7 @@ DEFINE GCC_MACRO                 = -DEFI_SPECIFICATION_VERSION=0x0002000A -DPI_S
   $(EDK_SHELL_DIR)/unload/unload.inf
   $(EDK_SHELL_DIR)/ver/Ver.inf
   $(EDK_SHELL_DIR)/vol/Vol.inf
-
+  
 [BuildOptions.Common.EDK]
   MSFT:*_*_IA32_CC_FLAGS    = /D EFI_SPECIFICATION_VERSION=0x0002000A /D PI_SPECIFICATION_VERSION=0x00010000 /D TIANO_RELEASE_VERSION=0x00080006 /D EFI32
   MSFT:*_*_IA32_ASM_FLAGS   = /DEFI32

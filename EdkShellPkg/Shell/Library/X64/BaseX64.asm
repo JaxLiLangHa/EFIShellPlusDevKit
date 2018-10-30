@@ -16,8 +16,8 @@ text    SEGMENT
 ;------------------------------------------------------------------------------
 ;  UINT8
 ;  EfiIoRead8 (
-;    VOID
-;    )
+;    IN UINTN  Port, // cx          IO Port Address
+;    )               // al          IO Port Value
 ;------------------------------------------------------------------------------
 EfiIoRead8 PROC    PUBLIC
     mov dx, cx
@@ -29,8 +29,8 @@ EfiIoRead8 ENDP
 ;------------------------------------------------------------------------------
 ;  UINT16
 ;  EfiIoRead16 (
-;    VOID
-;    )
+;    IN UINTN  Port, // cx          IO Port Address
+;    )               // ax          IO Port Value
 ;------------------------------------------------------------------------------
 EfiIoRead16 PROC    PUBLIC
     mov dx, cx
@@ -42,8 +42,8 @@ EfiIoRead16 ENDP
 ;------------------------------------------------------------------------------
 ;  UINT32
 ;  EfiIoRead32 (
-;    VOID
-;    )
+;    IN UINTN  Port, // cx          IO Port Address
+;    )               // eax         IO Port Value
 ;------------------------------------------------------------------------------
 EfiIoRead32 PROC    PUBLIC
     mov dx, cx
@@ -55,8 +55,8 @@ EfiIoRead32 ENDP
 ;------------------------------------------------------------------------------
 ;  UINT8
 ;  EfiIoWrite8 (
-;    IN UINTN  Port,
-;    IN UINT8 Value
+;    IN UINTN  Port, // cx          IO Port Address
+;    IN UINT8 Value  // dl          IO Port Value
 ;    )
 ;------------------------------------------------------------------------------
 EfiIoWrite8 PROC    PUBLIC
@@ -70,8 +70,8 @@ EfiIoWrite8 ENDP
 ;------------------------------------------------------------------------------
 ;  UINT16
 ;  IoWrite16 (
-;    IN UINTN  Port,
-;    IN UINT16 Value
+;    IN UINTN  Port, // cx          IO Port Address
+;    IN UINT16 Value // dx          IO Port Value
 ;    )
 ;------------------------------------------------------------------------------
 EfiIoWrite16 PROC    PUBLIC
@@ -85,8 +85,8 @@ EfiIoWrite16 ENDP
 ;------------------------------------------------------------------------------
 ;  UINT32
 ;  EfiIoWrite32 (
-;    IN UINTN  Port,
-;    IN UINT32 Value
+;    IN UINTN  Port, // cx          IO Port Address
+;    IN UINT32 Value // edx          IO Port Value
 ;    )
 ;------------------------------------------------------------------------------
 EfiIoWrite32 PROC    PUBLIC
