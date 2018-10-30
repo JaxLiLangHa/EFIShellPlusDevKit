@@ -72,7 +72,7 @@ InitializeError (
 
 UINTN
 PrintErrMsg (
-  IN UINTN EFIDebug
+  IN UINTN EFI_Debug
   );
 
 EFI_STATUS
@@ -499,7 +499,7 @@ Done:
 
 UINTN
 PrintErrMsg (
-  IN UINTN EFIDebug
+  IN UINTN EFI_Debug
   )
 /*++
 
@@ -507,7 +507,7 @@ Routine Description:
   
 Arguments:
 
-  EFIDebug - Debug mask
+  EFI_Debug - Debug mask
 
 Returns:
   
@@ -519,93 +519,93 @@ Returns:
   // if a debug level is now set,
   //    print it highlight
   //
-  PrintToken (STRING_TOKEN (STR_ERR_EFI_ERROR), HiiHandle, EFIDebug);
+  PrintToken (STRING_TOKEN (STR_ERR_EFI_ERROR), HiiHandle, EFI_Debug);
 
-  if (EFIDebug & EFI_D_INIT) {
+  if (EFI_Debug & EFI_D_INIT) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_INIT), HiiHandle, EFI_D_INIT);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_INIT_2), HiiHandle, EFI_D_INIT);
   }
 
-  if (EFIDebug & EFI_D_WARN) {
+  if (EFI_Debug & EFI_D_WARN) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_WARN), HiiHandle, EFI_D_WARN);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_WARN_2), HiiHandle, EFI_D_WARN);
   }
 
-  if (EFIDebug & EFI_D_LOAD) {
+  if (EFI_Debug & EFI_D_LOAD) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_LOAD), HiiHandle, EFI_D_LOAD);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_LOAD_2), HiiHandle, EFI_D_LOAD);
   }
 
-  if (EFIDebug & EFI_D_FS) {
+  if (EFI_Debug & EFI_D_FS) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_FS), HiiHandle, EFI_D_FS);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_FS_2), HiiHandle, EFI_D_FS);
   }
 
-  if (EFIDebug & EFI_D_POOL) {
+  if (EFI_Debug & EFI_D_POOL) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_POOL), HiiHandle, EFI_D_POOL);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_POOL_2), HiiHandle, EFI_D_POOL);
   }
 
-  if (EFIDebug & EFI_D_PAGE) {
+  if (EFI_Debug & EFI_D_PAGE) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_PAGE), HiiHandle, EFI_D_PAGE);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_PAGE_2), HiiHandle, EFI_D_PAGE);
   }
 
-  if (EFIDebug & EFI_D_INFO) {
+  if (EFI_Debug & EFI_D_INFO) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_INFO), HiiHandle, EFI_D_INFO);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_INFO_2), HiiHandle, EFI_D_INFO);
   }
 
-  if (EFIDebug & EFI_D_VARIABLE) {
+  if (EFI_Debug & EFI_D_VARIABLE) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_VARIABLE), HiiHandle, EFI_D_VARIABLE);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_VARIABLE_2), HiiHandle, EFI_D_VARIABLE);
   }
 
-  if (EFIDebug & EFI_D_BM) {
+  if (EFI_Debug & EFI_D_BM) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_BM), HiiHandle, EFI_D_BM);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_BM_2), HiiHandle, EFI_D_BM);
   }
 
-  if (EFIDebug & EFI_D_BLKIO) {
+  if (EFI_Debug & EFI_D_BLKIO) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_BLKIO), HiiHandle, EFI_D_BLKIO);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_BLKIO_2), HiiHandle, EFI_D_BLKIO);
   }
 
-  if (EFIDebug & EFI_D_NET) {
+  if (EFI_Debug & EFI_D_NET) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_NET), HiiHandle, EFI_D_NET);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_NET_2), HiiHandle, EFI_D_NET);
   }
 
-  if (EFIDebug & EFI_D_UNDI) {
+  if (EFI_Debug & EFI_D_UNDI) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_UNDI), HiiHandle, EFI_D_UNDI);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_UNDI_2), HiiHandle, EFI_D_UNDI);
   }
 
-  if (EFIDebug & EFI_D_LOADFILE) {
+  if (EFI_Debug & EFI_D_LOADFILE) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_LOADFILE), HiiHandle, EFI_D_LOADFILE);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_LOADFILE_2), HiiHandle, EFI_D_LOADFILE);
   }
 
-  if (EFIDebug & EFI_D_EVENT) {
+  if (EFI_Debug & EFI_D_EVENT) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_EVENT), HiiHandle, EFI_D_EVENT);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_EVENT_2), HiiHandle, EFI_D_EVENT);
   }
 
-  if (EFIDebug & EFI_D_ERROR) {
+  if (EFI_Debug & EFI_D_ERROR) {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_ERROR), HiiHandle, EFI_D_ERROR);
   } else {
     PrintToken (STRING_TOKEN (STR_ERR_EFI_D_ERROR_2), HiiHandle, EFI_D_ERROR);
@@ -613,7 +613,7 @@ Returns:
   //
   //
   //
-  return EFIDebug;
+  return EFI_Debug;
 }
 
 EFI_STATUS
