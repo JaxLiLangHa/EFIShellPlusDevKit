@@ -624,7 +624,20 @@ EFIAPI
 InitializeSmbiosViewApplicationGetLineHelp (
   OUT CHAR16              **Str
   );
-  
+
+EFI_STATUS
+EFIAPI
+InitializeSmn (
+  IN EFI_HANDLE         ImageHandle,
+  IN EFI_SYSTEM_TABLE   *SystemTable
+  );
+
+EFI_STATUS
+EFIAPI
+InitializeSmnGetLineHelp (
+  OUT CHAR16            **Str
+  );
+
 EFI_STATUS
 EFIAPI
 InitializeStall (
@@ -1008,6 +1021,11 @@ SEnvInternalCommands[] = {
     InitializeSmbiosViewApplication,
     L"smbiosview",
     InitializeSmbiosViewApplicationGetLineHelp
+  },
+  {
+    InitializeSmn,
+    L"smn",
+    InitializeSmnGetLineHelp
   },
   {
     InitializeStall,
