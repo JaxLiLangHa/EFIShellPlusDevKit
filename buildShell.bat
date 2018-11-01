@@ -36,7 +36,7 @@ goto end
 echo ===========================================================
 echo buildshell.bat [Arg1]:
 echo    Arg1: all   -- full build
-echo         clean -- delete Build/*.*
+echo         clean  -- delete Build/*.*
 echo ===========================================================
 goto:eof
 
