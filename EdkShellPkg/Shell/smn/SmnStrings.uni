@@ -18,20 +18,18 @@
 
 #string STR_SMN_UNKNOWN_ARG          #language eng  "%hs: Unknown argument - '%hs'\n"
 
-#string STR_SMN_TOO_FEW_ARGS          #language eng  "%HSMN:%N Too few arguments\n"
+#string STR_SMN_TOO_FEW_ARGS         #language eng  "%HSMN:%N Too few arguments\n"
 
-#string STR_SMN_TOO_MANY_ARGS         #language eng  "%HSMN:%N Too many arguments\n"
+#string STR_SMN_TOO_MANY_ARGS        #language eng  "%HSMN:%N Too many arguments\n"
 
-#string STR_SMN_READ_SUCCESS         #language eng  "Read Successfuly\n"
+#string STR_SMN_READ                 #language eng  "%EDie:%N%d %EAddress:%N0x%8X = 0x%8X\n"
 
-#string STR_SMN_WRITE_SUCCESS        #language eng  "Write Successfuly\n"
+#string STR_SMN_WRITE                #language eng  "%EDie:%N%d %EAddress:%N0x%8X = 0x%8X\n"
 
 #string STR_SMN_LINE_HELP            #language eng  "Read and Write SMN Address."
 
 #string STR_SMN_VERBOSEHELP          #language eng  "Read and Write SMN Address.\n"
-                                                    "\n"
-                                                    "SMN [Address] [-d dienum] [-w value]\n"
-                                                    "\n"   
+                                                    "SMN [Address] [-d dienum] [-w value]\n"   
                                                     "    address  - The SMN address to be operated\n"
                                                     "    -d       - Slecte a die num\n"
                                                     "    dienum   - Soc Die ID, based on 0.\n"
@@ -40,15 +38,12 @@
                                                     "\n"
                                                     "Note:\n"
                                                     "    1. If [-d dienum] is not specified, 0 will be used as default.\n"
-                                                    "    \n"
                                                     "    2. If [-w value] is not specified, "read [Address]" will be used as default.\n"
                                                     "\n"
                                                     "Examples:\n"
                                                     "  * To Read a SMN Address:\n"
                                                     "    Shell> smn 16D80120 -d 0\n"
-                                                    "    Die:0 -> Address:0x16D80120 = FFFF3210\n"
-                                                    "    Read Successfuly\n"
+                                                    "    Die:0  Address:0x16D80120 = 0xFFFF3210\n"
                                                     "  * To Write a SMN Address:\n"
-                                                    "    Shell> smn 16D80120 -d 0 -w 0xFFFFFFFF\n"
-                                                    "    Die:0 -> Address:0x16D80120 = FFFFFFFF\n"
-                                                    "    Write Successfuly\n"
+                                                    "    Shell> smn 16D80120 -d 0 -w FFFFFFFF\n"
+                                                    "    Die:0 Address:0x16D80120 = 0xFFFFFFFF\n"

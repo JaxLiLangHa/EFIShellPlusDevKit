@@ -69,6 +69,19 @@ InitializeSmn (
   IN EFI_SYSTEM_TABLE   *SystemTable
   );
 
+VOID NbSmnRead(
+  IN     UINT32          DieNum,
+  IN     UINT32          Address,
+  IN OUT UINT32	       *Value
+  );
+
+VOID 
+NbSmnWrite (
+  IN     UINT32             DieNum,
+  IN     UINT32             Address,
+  IN	   UINT32	            *Value
+  );
+
 EFI_BOOTSHELL_CODE(
   EFI_APPLICATION_ENTRY_POINT(InitializeSmn)
 )
@@ -101,6 +114,7 @@ Returns:
     UINT32                  SmnAddress;
     UINT32                  RegValue;
     EFI_STATUS              Status;
+    BOOLEAN                 FlagWrite;
     //UINTN                   Background;
     //UINTN                   ForeColor;
 
@@ -140,15 +154,15 @@ Returns:
     if (VarCheckOk != RetCode) {
         switch (RetCode) {
         case VarCheckLackValue:
-            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_LACK_ARG), HiiHandle, L"SMN R&W", Useful);
+            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_LACK_ARG), HiiHandle, L"SMN", Useful);
             break;
 
         case VarCheckDuplicate:
-            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_DUP_FLAG), HiiHandle, L"SMN R&W", Useful);
+            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_DUP_FLAG), HiiHandle, L"SMN", Useful);
             break;
 
         case VarCheckUnknown:
-            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_UNKNOWN_FLAG), HiiHandle, L"SMN R&W", Useful);
+            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_UNKNOWN_FLAG), HiiHandle, L"SMN", Useful);
             break;
 
         default:
@@ -167,7 +181,7 @@ Returns:
             ChkPck.FlagCount > 2 ||
             (2 == ChkPck.FlagCount && !LibCheckVarGetFlag (&ChkPck, L"-b"))
             ) {
-            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_TOO_MANY), HiiHandle, L"SMN R&W");
+            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_TOO_MANY), HiiHandle, L"SMN");
             Status = EFI_INVALID_PARAMETER;
         } else {
             PrintToken (STRING_TOKEN (STR_SMN_VERBOSEHELP), HiiHandle);
@@ -178,7 +192,7 @@ Returns:
     }
 
     if (ChkPck.ValueCount == 0) {
-        PrintToken(STRING_TOKEN(STR_SMN_TOO_FEW_ARGS), HiiHandle, L"SMN R&W");
+        PrintToken(STRING_TOKEN(STR_SMN_TOO_FEW_ARGS), HiiHandle, L"SMN");
         Status = EFI_INVALID_PARAMETER;
         goto Done;
     }
@@ -189,12 +203,13 @@ Returns:
     DieNum = 0;
     TargetValue = 0xFFFFFFFF;
     SmnAddress = 0;
+    FlagWrite = FALSE;
 
     Item = LibCheckVarGetFlag (&ChkPck, L"-d");
     if(Item) {
         DieNum = (UINT8) (StrToUIntegerBase (Item->VarStr, 10, &Status));
         if (EFI_ERROR (Status)) {
-            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_INVALID_ARG), HiiHandle, L"SMN R&W", Item->VarStr);
+            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_INVALID_ARG), HiiHandle, L"SMN", Item->VarStr);
             Status = EFI_INVALID_PARAMETER;
             goto Done;
         }
@@ -204,10 +219,11 @@ Returns:
     if(Item) {
         TargetValue = (UINT32) (StrToUIntegerBase (Item->VarStr, 16, &Status));
         if (EFI_ERROR (Status)) {
-            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_INVALID_ARG), HiiHandle, L"SMN R&W", Item->VarStr);
+            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_INVALID_ARG), HiiHandle, L"SMN", Item->VarStr);
             Status = EFI_INVALID_PARAMETER;
             goto Done;
         }
+        FlagWrite = TRUE;
     }
 
     //
@@ -217,14 +233,21 @@ Returns:
     if (NULL != Item) {
         SmnAddress = (UINT32) StrToUIntegerBase (Item->VarStr, 16, &Status);
         if (EFI_ERROR (Status)) {
-            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_INVALID_ARG), HiiHandle, L"SMN R&W", Item->VarStr);
+            PrintToken (STRING_TOKEN (STR_SHELLENV_GNC_INVALID_ARG), HiiHandle, L"SMN", Item->VarStr);
             Status = EFI_INVALID_PARAMETER;
             goto Done;
         }
     }
 
-    NbSmnRead(DieNum, SmnAddress, &RegValue);
-    Print (L"Die:%d -> Address:0x%08X = 0x%8X\n",DieNum, SmnAddress, RegValue);
+    if (FlagWrite) {
+        NbSmnWrite(DieNum, SmnAddress, &TargetValue);
+        NbSmnRead(DieNum, SmnAddress, &RegValue);
+        PrintToken (STRING_TOKEN (STR_SMN_WRITE), HiiHandle, DieNum, SmnAddress, RegValue);
+    } else {
+        NbSmnRead(DieNum, SmnAddress, &RegValue);
+        PrintToken (STRING_TOKEN (STR_SMN_READ), HiiHandle, DieNum, SmnAddress, RegValue);  
+    }
+    
 
 Done:
   LibCheckVarFreeVarList (&ChkPck);
@@ -261,4 +284,27 @@ NbSmnWrite (
 
 	//clear in case other functions don't pay attention to this reg
 	EfiShellPciWrite32(NB_SMN_INDEX_EXTENSION_3, 0);
+}
+
+EFI_STATUS
+InitializeSmnGetLineHelp (
+  OUT CHAR16            **Str
+  )
+/*++
+
+Routine Description:
+
+  Get this command's line help
+
+Arguments:
+
+  Str - The line help
+
+Returns:
+
+  EFI_SUCCESS   - Success
+
+--*/
+{
+  return LibCmdGetStringByToken (STRING_ARRAY_NAME, &EfiSmnGuid, STRING_TOKEN (STR_SMN_LINE_HELP), Str);
 }

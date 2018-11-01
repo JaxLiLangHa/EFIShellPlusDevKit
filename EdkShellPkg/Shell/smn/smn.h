@@ -43,17 +43,4 @@ Revision History
 #define NB_SMN_INDEX_5              0xE0
 #define NB_SMN_DATA_5               0xE4
 
-VOID NbSmnRead(
-  IN     UINT32          DieNum,
-  IN     UINT32          Address,
-  IN OUT UINT32	       *Value
-  );
-
-VOID 
-NbSmnWrite (
-  IN     UINT32             DieNum,
-  IN     UINT32             Address,
-  IN	 UINT32	            *Value
-  );
-  
 #endif
