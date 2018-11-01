@@ -20,7 +20,7 @@
 #--*/
 
 [defines]
-BASE_NAME            = ShellFull
+BASE_NAME            = Shell
 FILE_GUID            = c57ad6b7-0515-40a8-9d21-551652854e37
 COMPONENT_TYPE       = APPLICATION
 
